@@ -1,0 +1,108 @@
+/*default sistem*/
+a:hover	{ text-decoration: inherit!important; color: yellow;}
+a:focus { text-decoration: none!important; }
+a { color: white;}
+body	{ background-color: #eee; }
+@font-face	{ font-family: 'bbrand'; src: url('<?php echo base_url("assets/fonts/tt0586m_.ttf"); ?>') format('truetype'); }
+.bbrand	{ font-family:'bbrand' }
+.garis	{ border: 1px solid }
+.paddingnone	{ padding-bottom: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; }
+.bts-ats	{ margin-top: 7px; }
+.bts-bwh	{ margin-bottom: 7px; }
+.sambungfloat	{ clear: both; }
+.tengah{ text-align: center; }
+.bgheader	{ background-color: #0A3221; }
+.mainbox	{ width: 90%; margin-left: auto; margin-right: auto; }
+.unirow	{ margin-right: -3.5px; margin-left: -3.5px; }
+.kiri	{ float: left; }
+.kanan	{ float: right; }
+.unipd	{ padding-left: 3.5px; padding-right: 3.5px; }
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn { border-bottom-left-radius: 0; border-top-left-radius: 0; min-width: 31px; color: #34495e; background-color: #f1c40f; border-color: #f1c40f; }
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn{ border-bottom-right-radius: 0; border-top-right-radius: 0; border-color: white; }
+
+/*nav*/
+.unimedsos	{ min-width: 30px; padding: 10px 10px 10px 10px; font-size: 12px; font-weight: bold; margin-right: 5px; color: #34495e; float: left; text-align: center; transition-property: background-color, color; transition-duration: 0.15s; transition-delay: 0.15s; }
+.unimedsos:hover	{ background-color: #34495e; color: #f1c40f; cursor: pointer; }
+.unimenavbox	{ text-decoration: none; margin-right: -7px; margin-left: -7px; }
+.uninavtop	{ background-color: #4CAF50; color: #0A3221; width: 100%; border-bottom:1px solid #4CAF50; }
+.unimenav	{ min-width: 50px; text-align: center; padding: 10px; font-size: 12px; font-weight: bold; transition-property: background-color, color; transition-duration: 0.15s; transition-delay: 0.15s; }
+.unimenav:hover	{ cursor: pointer; background-color: #0A3221; color: white; }
+.unidayanbrand	{ padding: 26px 0px; text-align: center; }
+.unibrand	{ font-family: calibri; margin-top: 0px; margin-bottom: 0px; color: #B4DC39; font-size: 33px; }
+.taglineuni	{ color: white; font-size: 11px; margin-bottom: 0px; margin-top: 38px; }
+.alamatminu { color: white; font-size: 11px; margin-bottom: 30px;  }
+.brandsize 	{ width: 90px; }
+.unimenavu	{ text-decoration: none!important; padding: 10px 7px 10px 7px; color: white; font-size: 12px; text-align: center; float: left; font-weight: bold; border-bottom: 2px solid #34495e; transition-property: background-color, border-bottom, color, padding; transition-duration: 0.15s; transition-delay: 0.15s; }
+.unimenavu:hover	{ text-decoration: none!important; padding: 8px 7px 12px 7px; color:#f1c40f; border-bottom: 2px solid #f1c40f; cursor: pointer; }
+.bgloginav	{ background-color: #2c3e50; padding: 7px; }
+.mainlbl	{ font-size: 13px ; font-weight: bold; margin-top: 7px; margin-bottom: 7px; color: white;  }
+.unibtn	{ padding: 3.5px 7px; text-align: center; font-size: 12px; font-weight: bold; float: right; background-color: #f1c40f; color: #34495e; }
+.unibtn:hover	{ background-color: #f39c12; cursor: pointer; }
+
+/*boostrapslider*/
+.item	{ max-height: 360px; overflow: hidden; position: relative;}
+.carousel-control.right { background-image: none; }
+.carousel-control.left 	{ background-image: none; }
+.media 	{ margin-top: 7px; }
+.media-object	{ width: 40px; }
+.media-heading	{ font-size: 13px; font-weight: bold; margin-bottom: 0px; color: #8BC34A; }
+.media-left, .media-right, .media-body	{ font-size: 11px; }
+
+/*headerslider*/
+.unittlbar	{ max-width: 400px; position: absolute; left: 14px; bottom: 14px; padding: 14px; font-weight: normal; font-size: 25px; background-color: rgba(97, 220, 57, 0.78); color: #333; vertical-align: top; border-radius: 2px; }
+
+/*headertop*/
+.boxbox { border-radius: 2px; background-color: white; border: 1px solid #e2e2e2; padding: 7px;  }
+.lblttl	{ color: #0A3221; font-size: 14px; font-weight: bold; margin-top: 5px; margin-bottom: 5px; }
+.lblttl2	{ color: #0A3221; font-size: 12px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; }
+.lbldll	{ font-size: 10px; float: left; margin-right: 5px; font-weight: bold; color: black; }
+.lblttlbox	{ border-radius: 2px 2px 0px 0px; background-color: #96DC39; padding: 7px; margin: -7px -7px 0px -7px; }
+.aalshow	{ padding: 7px; text-align: center; font-weight: bold; font-size: 12px; color: #34495E; margin: 0px -7px -7px -7px; transition-property: color; transition-duration: 0.15s; transition-delay: 0.15s; }
+.aalshow:hover	{ color: #E74C3C; cursor: pointer; }
+.isilbl	{ border-left: 0px solid white; padding: 8px 20px; border-bottom: 1px solid #ECF0F1; color:#34495E; font-size: 12px; margin: 0px -7px 0px -7px; font-weight: bold; transition-property: border-left, color; transition-duration: 0.15s; transition-delay: 0.15s; }
+.isilbl2	{ min-height: 57px; border-left: 0px solid white; padding: 8px 20px 8px 20px; border-bottom: 1px solid #ECF0F1; color:#34495E; font-size: 12px; margin: 0px -7px 0px -7px; font-weight: bold; transition-property: border-left,padding, color; transition-duration: 0.15s; transition-delay: 0.15s; }
+.isilbl:hover	{ cursor: pointer; border-left: 4px solid #2C3E50; }
+.isilbl2:hover	{ cursor: pointer; border-left: 4px solid #2C3E50; padding: padding: 8px 10px 8px 20px; }
+.tglttl	{ font-size: 10px; color: #BDC3C7; }
+
+/*news*/
+.bigbox	{ border-radius: 2px; border:1px solid #e2e2e2; padding: 7px }
+.newstoplks	{ position: absolute; right: 0px; top: 0px; margin-top: 0; margin-right: 0; padding: 14px 7px; font-weight: bold; font-size: 12px; background-color: #4CAF50; color: white!important; height: 13px; line-height: 0px; zoom: 1; display: inline-block; }
+.newstopbox	{ padding-left: 3.5px; padding-right: 3.5px; margin-top: 7px; }
+.newstopimg	{ overflow: hidden; max-height: 180px; position: relative; }
+.newstopttl	{ color: #34495E; font-weight: bold; font-size: 13px; padding: 7px 0px 0px 0px; margin-top: 0px; margin-bottom: 0px }
+.newstopdes	{ color: #95A5A6; font-size: 11px; }
+.newstoplist	{ padding-left: 3.5px; padding-right: 3.5px; margin-top: 7px; }
+.newstoplistimg	{ overflow: hidden; max-height: 70px; }
+.newstoplistdes	{ font-size: 10px; font-weight: bold; margin-top: 2px; color:  #34495E; margin-bottom: 7px; }
+.allshow	{ border-top: 1px solid #e2e2e2; padding: 3.5px; text-align: center; font-weight: bold; font-size: 12px; color: #34495E; margin: 0px -7px -7px -7px; transition-property: background-color; transition-duration: 0.15s; transition-delay: 0.15s; }
+.allshow:hover	{ cursor: pointer; background-color: #F1c40f; }
+.pathbox	{ border-radius: 2px; padding: 14px; margin-top: 7px; height: 114px; background-color: #34495E; }
+.pathboxttl	{ border-radius: 2px 2px 0px 0px; border-bottom: 1px solid #2C3E50; background-color: #8BC34A; color: white; margin-top: -14px; padding: 14px;  margin-left: -14px; margin-right: -14px; font-size: 14px; font-weight: bold; margin-bottom: 5px; }
+.pathboxdes	{ font-size: 12px; color: white; }
+
+/*warna*/
+.txtputih	{ color: white; }
+.txtkuning	{ color: #F1C40F; }
+.bghijau	{ background-color: #1ABC9C; }
+.bgbiru	{ background-color: #3498DB; }
+.bghitam	{ background-color: #34495E; }
+.bgungu	{ background-color: #9B59B6; }
+
+/*footeruni*/
+.unifooter	{ background-color:#0A3221; padding: 7px 0px; color: white; margin-top: 7px; }
+.bixbox2	{ border-radius: 2px; border: 1px solid rgba(76,175,80,0.25); padding: 7px;  }
+.ftrttl	{ color: #0A3221; font-weight: bold; font-size: 12px; }
+.unicopy	{ color: white; padding: 7px 0px; margin-top: 7px; font-size: 12px; border-top: 1px solid #4CAF50; margin-bottom: -7px }
+.lblttldefault	{ padding: 7px 0px; border-bottom: 1px solid #4CAF50; color: white; font-size: 12px; font-weight: bold; margin-top: 0px; margin-bottom: 7px; }
+.isidefault	{ font-size: 12px; color: white; margin-bottom: 2px }
+
+/*subkategori*/
+.title3{
+	font-size: 28px;
+	color: white;
+	font-weight: bold;
+	font-family: cursive;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}

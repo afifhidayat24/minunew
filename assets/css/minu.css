@@ -1,0 +1,381 @@
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+	color: #fff;
+	background-color: #4CAF50;
+}
+.nav-pills > li > a {
+	border-radius: 0px;
+}
+a{
+	color: inherit;
+}
+.bts-ats{
+	margin-top: 7px;
+}
+a:hover {
+	text-decoration: inherit;
+	color: #16a085;
+}
+.gcb{
+	text-align: center;
+}
+.header1{
+	border:0px solid;
+	background-color: #16a085;
+	border-color: #bdc3c7;
+	padding:0px 0%;
+	color: white;
+}
+.header2{
+	border:0px solid;
+	padding: 2px 0px;
+	background-color: #00923f;
+	border-color: #bdc3c7;
+	font-size: 30px;
+	font-weight: bold;
+}
+.log-title{
+	color: white;
+}
+.whitebox{
+	background-color: white;
+	padding: 14px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.footer {
+
+	border-top: 5px solid;
+	background-color: #27ae60;
+	border-top-color: #7cd576;
+	padding: 3px;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+.footer2 {
+	border: 0px solid ;
+	background-color: #27ae60;
+	padding: 10px;
+	color: white;
+	font-size: 12px;
+}
+.latar{
+	padding-top: 0px 0px;
+	padding-left: 100px 0px;
+	padding-right: 100px 0px;
+
+}
+.minu-brand {
+	width: 110px;
+}
+.box{
+	border:0px solid;
+	width: 88%;
+	margin: auto;
+	background-color: white;
+	border-color: black;
+}
+.boxmenu{
+	border:0px solid;
+	width: 88%;
+	margin: auto;
+	background-color:#7cd576;
+	border-color: white;
+	padding :25px 0px;
+}
+.menu{
+	border-top: 5px solid;
+	border-top-color: #27ae60;
+	margin: auto;
+	padding-bottom: 0px 0px;
+	padding: 0px;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.menuluar{
+	background-color:#7cd576;
+}
+.isi {
+	border:0px solid;
+	width: 88%;
+	margin: auto;
+	background-color: white;
+	border-color: black;
+	padding :0px 0px;
+}
+.grs-isi{
+
+	border-left:6px solid;
+	border-right:6px solid;
+	border-color: #ecf0f1;
+	background-color: white;
+	padding :15px 0px;
+	border-radius: 3px;
+	padding-top: 3px;
+
+
+}
+.grs-botom{
+	border-bottom:1px solid;
+	border-color: rgb(0, 146, 63);
+}
+.garis {
+	border:2px solid;
+
+}
+.sambungfloat{
+	clear: both;
+}
+.kanan {
+	float: right;
+	margin-right: 14px;
+}
+.kananbtn {
+	float: right;
+}
+.imgbox{
+	width: 240px;
+	height: 220px;
+	overflow: hidden;
+}
+.listpbox{
+	width: 40px;
+	border-radius: 20px;
+}
+.artikelkat{;
+	margin-top: 88px;
+}
+
+.Menusiswa {
+	padding: 20px;
+	list-style: circle;
+	text-align: left;
+	margin-left: 14px;
+	margin-right: 14px;
+}
+
+.biospasi{
+	padding: 40px;
+	text-align: left;
+	margin-left: 20px;
+}
+.bioth{
+	padding: 20px;
+}
+.textleft{
+	text-align: left;
+	padding: 12px;
+}
+.col-menu-adm{
+	background-color: #b3ffcc;
+}
+.poster{
+	width: 100%;
+}
+.login-box{
+	padding: 15px 14px;
+	background-color: #02833a;
+	border-radius: 4px;
+}
+.mainbox{
+	width: 90%;
+	margin: auto;
+	background:#00923f;
+	background-color: #00923f;
+	padding: 0px 7px ;
+}
+.isiart{
+	width: 100%;
+	font-size: 10px;
+	height:50px;
+	overflow: hidden;
+}
+.boxfa1 {
+	color: white;
+	padding: 12px 42px;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .25);
+	border-radius: 3px;
+
+}
+.boxfa2 {
+	padding: 10px;
+	padding-top: 40px;
+	padding-bottom:40px;
+	font-size: 15px;
+	background-color: #76d5c8;
+	border-radius: 3px;
+}
+.boxfa3 {
+	padding: 10px;
+	padding-top: 40px;
+	padding-bottom:40px;
+	font-size: 15px;
+	background-color: #c6dd54;
+	border-radius: 3px;
+}
+.boxfa4 {
+	padding: 10px;
+	padding-top: 40px;
+	padding-bottom:40px;
+	font-size: 15px;
+	background-color: #e97333;
+	border-radius: 3px;
+}
+.boxung1 {
+	padding: 20px;
+	padding-top: 16px;
+	padding-bottom:16px;
+	font-size: 18px;
+	background-color: #7cd576;
+	border-radius: 3px;
+}
+.boxung2 {
+	padding: 20px;
+	padding-top: 16px;
+	padding-bottom:16px;
+	font-size: 18px;
+	background-color: #76d5c8;
+	border-radius: 3px;
+}
+.boxung3 {
+	padding: 20px;
+	padding-top: 16px;
+	padding-bottom:16px;
+	font-size: 18px;
+	background-color: #c6dd54;
+	border-radius: 3px;
+}
+.boxung4 {
+	padding: 20px;
+	padding-top: 16px;
+	padding-bottom:16px;
+	font-size: 18px;
+	background-color: #e97333;
+	border-radius: 3px;
+}
+.boxung5 {
+	padding: 20px;
+	padding-top: 16px;
+	padding-bottom:16px;
+	font-size: 18px;
+	background-color: hsla(97, 100%, 57%, 0.67);
+	border-radius: 3px;
+}
+.icon-xl {
+    width: 205px;
+    height: 205px;
+		border: 5px solid #CEECCC;
+		background-color: #ECFFE5;
+    line-height: 181px;
+		color: #009688;
+    font-size: 50px;
+		border-radius: 100%;
+}
+.icon {
+    display: inline-block;
+    text-align: center;
+}
+.icon-secondary-1:hover {
+    border: 5px solid #A5E88F;
+    cursor: default;
+}
+.title2{
+	background-color: #3c763d;
+	color: white;
+	font-size: 25px;
+	padding: 7px 14px;
+	border-radius: 3px;
+	font-weight: bold;
+	text-align: center;
+	font-family: sans-serif;
+}
+.title3{
+	font-size: 28px;
+	color: white;
+	font-weight: bold;
+	font-family: cursive;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.title4{
+	margin-top: 13%;
+	color: white;
+	width: 180px;
+	height: 180px;
+	border: 5px solid white;
+	background-color: #B73F33;
+	line-height: 181px;
+	font-weight: bold;
+	font-size: 18px;
+	-moz-transform: rotate(-25deg);
+	 -webkit-transform: rotate(-25deg);
+	 -ms-transform: rotate(-25deg);
+	 -o-transform: rotate(-25deg);
+	border-radius: 100%;
+	display: inline-block;
+	text-align: center;
+
+}
+.margin{
+	margin-top: 40px;
+}
+
+.pub{
+	width: 90%;
+	margin: auto;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: cursive;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.gal{
+	font-size: 12px;
+	color: white;
+}
+.icon-pres {
+
+	border: 5px solid #CEECCC;
+	background-color: #3498db;
+	line-height: 100px;
+	color: white;
+	font-size: 25px;
+	border-radius: 100%;
+	padding: 6px 12px;
+}
+.kontak-pad{
+	padding-left: 30px;
+}
+.faq-pad{
+	padding: 12px;
+	border:1px solid;
+	width: 88%;
+	margin: auto;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.02);
+	border-color: rgba(0, 0, 0, 0.13);
+}
+.box-unggulan {
+	color: white;
+	text-align: center;
+	background-color: #3bc4e6;
+	border-radius: 3px;
+	padding: 7px 12px;
+}
+.box-exstra {
+	color: white;
+	text-align: center;
+	background-color: #F48322;
+	border-radius: 3px;
+	padding: 7px 12px;
+}
+.box-guru {
+	padding: 7px 12px;
+}
