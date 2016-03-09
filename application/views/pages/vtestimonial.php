@@ -1,4 +1,4 @@
-<div style="margin-top:7%;" class="box">
+<div style="margin-top:12px;" class="box">
   <div class="col-md-8 kontak-pad">
     <div class="">
       <h4><b>Form Testimonial</b></h4>
@@ -28,7 +28,7 @@
         <label for="exampleInputPassword1">Pesan</label>
         <textarea class="form-control"  rows="8" cols="40"></textarea>
       </div>
-      <button type="submit" class="btn btn-info">Kirim</button>
+      <button type="submit" class="btn btn-success">Kirim</button>
     </form>
   </div>
   <div class="col-md-4 kontak-pad">
@@ -45,4 +45,7 @@
         <h5 class="bts-ats"><i class="fa fa-lg fa-twitter-square"></i>&nbsp;&nbsp;twitter</h5>
       </div>
     </div>
+  </div>
+  <div class="sambungfloat">
+
   </div>

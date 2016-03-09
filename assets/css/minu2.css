@@ -106,3 +106,12 @@ body	{ background-color: #eee; }
 	padding-top: 40px;
 	padding-bottom: 20px;
 }
+.support{
+	padding: 12px 12px;
+	margin: auto;
+	font-size: 16px;
+	color: white;
+	background-color: orange;
+	border-radius: 4px;
+	font-weight: bold;
+}

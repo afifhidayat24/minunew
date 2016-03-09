@@ -54,7 +54,7 @@
                 <div class="newstoplistimg">
                   <img src="<?php echo base_url('assets/img/homepage/pramuka.jpg'); ?>" width="100%">
                 </div>
-                <h5 class="newstoplistdes">Rektor UGM Ajak Alumni Jauhi Perilaku Koruptif</h5>
+                <h5 class="newstoplistdes">Para Regu Pramuka Sesaat Setelah Apel Pembukaan</h5>
               </div>
 
               <!-- List start  -->
@@ -62,7 +62,7 @@
                 <div class="newstoplistimg">
                   <img src="<?php echo base_url('assets/img/homepage/jasjus.jpg'); ?>" width="100%">
                 </div>
-                <h5 class="newstoplistdes">Mahasiswa Akuntansi UGM Juarai Risk Intelligence ...</h5>
+                <h5 class="newstoplistdes">Para siswa siswi cukup antusias acara yang diadakan oleh jasjus</h5>
               </div>
 
               <!-- List start  -->
@@ -70,7 +70,7 @@
                 <div class="newstoplistimg">
                   <img src="<?php echo base_url('assets/img/homepage/lap.jpg'); ?>" width="100%">
                 </div>
-                <h5 class="newstoplistdes">Orientasi Pengenalan Kampus, Mahasiswa Asing UGM ...</h5>
+                <h5 class="newstoplistdes">seru seruan murid baru di pandu oleh badut</h5>
               </div>
               <div class="sambungfloat"></div>
             </div>
@@ -94,7 +94,7 @@
                 <div class="newstoplistimg">
                   <img src="<?php echo base_url('assets/img/homepage/mina.jpg'); ?>" width="100%">
                 </div>
-                <h5 class="newstoplistdes">Rektor UGM Ajak Alumni Jauhi Perilaku Koruptif</h5>
+                <h5 class="newstoplistdes">Ngajak Badut MINU main Bareng Murid baru</h5>
               </div>
 
               <!-- List start  -->
@@ -102,7 +102,7 @@
                 <div class="newstoplistimg">
                   <img src="<?php echo base_url('assets/img/homepage/lap.jpg'); ?>" width="100%">
                 </div>
-                <h5 class="newstoplistdes">Mahasiswa Akuntansi UGM Juarai Risk Intelligence ...</h5>
+                <h5 class="newstoplistdes">seru seruan murid baru di pandu oleh badut</h5>
               </div>
 
               <!-- List start  -->
@@ -110,7 +110,7 @@
                 <div class="newstoplistimg">
                   <img src="<?php echo base_url('assets/img/homepage/kartini2.jpg'); ?>" width="100%">
                 </div>
-                <h5 class="newstoplistdes">Orientasi Pengenalan Kampus, Mahasiswa Asing UGM ...</h5>
+                <h5 class="newstoplistdes">Perayaan Kartini Pada Tahun Ini diisi dengan Lomba Berbusana...</h5>
               </div>
               <div class="sambungfloat"></div>
             </div>
@@ -122,46 +122,46 @@
             <div class="lblttlbox"><h4 class="lblttl"><i class="fa fa-cab"></i> Agenda Madrasah</h4></div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">International Short Course on Smart Grid and Green Energy</h4>
+              <h4 class="lblttl2">Materi Rapat Kordinasi Persiapan Kompetisi Sains MADRASAH (KSM) Tingkat Provinsi Jawa Timur</h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 2016</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">The 3rd planocosmo and the 10th SSMS International Conference </h4>
+              <h4 class="lblttl2"> Rapat Koordinasi Awal masuk KBM semester genap </h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 2016</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">Perubahan Nilai Mata Kuliah KP/TA/Tesis/Disertasi Semester II dan Semester Pendek 2013/2014</h4>
+              <h4 class="lblttl2">Perubahan Susunan Anggaran Tahunan Tiap Tingkat Kelas </h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 2016</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">Nilai dan Peringkat Akreditasi Program Studi pada Program Doktor</h4>
+              <h4 class="lblttl2">Kepanitiaan Persiapan Acara Akhirussanah Kelas 6 Tahun Ajaran 2015/2016 </h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 2016</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">Tim Sosialisasi SNMPTN dan “Unpad Nyaah ka Jabar” Berkunjung ke Kab Majalengka dan Kab Cianjur</h4>
+              <h4 class="lblttl2">Tim Sosialisasi PSB dan Pemerataan Informasi Mengenai Profil Sekolah di tiap PAUD</h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 2016</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
@@ -173,46 +173,46 @@
             <div class="lblttlbox"><h4 class="lblttl"><i class="fa fa-bullhorn"></i> Info Jariyah</h4></div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">International Short Course on Smart Grid and Green Energy</h4>
+              <h4 class="lblttl2">Musyawarah Pengadaan Kelengkapan Marcing Band </h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 201</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">The 3rd planocosmo and the 10th SSMS International Conference </h4>
+              <h4 class="lblttl2">Rincian Pengadaan Kelengkapan Kelas Baru Pada Lantai 2</h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 2016</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">Perubahan Nilai Mata Kuliah KP/TA/Tesis/Disertasi Semester II dan Semester Pendek 2013/2014</h4>
+              <h4 class="lblttl2">Rincian Daftar Siswa Yang Menerima Dana BOS Mulai Kelas 1 sampai dengan Kelas 5</h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 2016</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">Nilai dan Peringkat Akreditasi Program Studi pada Program Doktor</h4>
+              <h4 class="lblttl2">Rencana Rehap Gedung Baru, Yang Bertujuan Untuk Menambah Aula Guna Meningkatkan Efektifitas Belajar Siswa</h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 2016</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
             <!--list start-->
             <div class="isilbl2">
-              <h4 class="lblttl2">Tim Sosialisasi SNMPTN dan “Unpad Nyaah ka Jabar” Berkunjung ke Kab Majalengka dan Kab Cianjur</h4>
+              <h4 class="lblttl2">Rincian Kebutuhan Renovasi Gedung Kelas 2 Yang akan digunakan untuk kelas Unggulan</h4>
               <div class="mediabox">
                 <div class="lbldll">oleh admin</div>
-                <div class="lbldll">6 Maret 2015</div>
+                <div class="lbldll">6 Maret 2016</div>
                 <div class="sambungfloat"></div>
               </div>
             </div>
@@ -266,10 +266,10 @@
       <div class="lblttlbox"><h4 class="lblttl tengah"><i class="fa fa-desktop"></i> PRESTASI KAMI</h4></div>
       <!--list start-->
       <div class="isilbl">
-        <h4 class="lblttl2">Pemenang Speech Contes TA 2015</h4>
+        <h4 class="lblttl2">Pemenang Speech Contes TA 2016</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -278,7 +278,7 @@
         <h4 class="lblttl2">Pemenang Lomba Melukis Tingkat SD/MI Se Kec.Purwoharjo</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -287,7 +287,7 @@
         <h4 class="lblttl2">Juara 2 Lomba Tartilul Quran Tingkat Kecamatan TA 2016</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -296,7 +296,7 @@
         <h4 class="lblttl2">Juara 3 Lomba Pramuka Tingkat Dua Kab. Banyuwangi</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -305,7 +305,7 @@
         <h4 class="lblttl2">Juara 2 Lomba Mewarnai Kaligrafi Islami</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -314,7 +314,7 @@
         <h4 class="lblttl2">Juara Harapan 1 Carnaval 17 Agustus 2015</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -329,7 +329,7 @@
         <h4 class="lblttl2">Informasi Pembayaran Dana Sumbangan Kurban 2015</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -338,7 +338,7 @@
         <h4 class="lblttl2">Pembudidayaan Tanaman Depan Kelas</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -347,7 +347,7 @@
         <h4 class="lblttl2">Pembelajaran Kelas Interaktif Setiap Sub. Mata Pelajaran</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -356,7 +356,7 @@
         <h4 class="lblttl2">Sumbangan Pembiayaan Pembelian Alat Musik Drum Band</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -365,7 +365,7 @@
         <h4 class="lblttl2">Legalisir Ijazah Kelulusan, Syarat dan Tempat Pengambilan</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
@@ -374,19 +374,25 @@
         <h4 class="lblttl2">Penerapan Budaya Hidup Bersih Dilingkungan Sekolah</h4>
         <div class="mediabox">
           <div class="lbldll">oleh admin</div>
-          <div class="lbldll">6 Maret 2015</div>
+          <div class="lbldll">6 Maret 2016</div>
           <div class="sambungfloat"></div>
         </div>
       </div>
 
       <div class="aalshow">Show All</div>
     </div>
-    <div class="boxbox bts-ats">
-      <div class="boxbox">
-        <span><img src="<?php echo base_url('assets/img/support-online.png'); ?>" height="50px;" width="45%" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span><img src="<?php echo base_url('assets/img/support-online.png'); ?>" height="50px;" width="45%" alt="" /></span>
+    <div class="boxbox bts-ats ">
+      <div class="col-md-12">
+        <div class="col-md-6">
+          <span class="support btn"><a href="#"><i class="fa fa-comments"></i>&nbsp;&nbsp;Support Online</a></span>
+        </div>
+        <div class="col-md-6">
+          <span class="support btn"><a href="<?php echo base_url()?>ctestimonial/"><i class="fa fa-comment"></i>&nbsp;&nbsp;Testimonial</a></span>
+        </div>
       </div>
+      <div class="sambungfloat"></div>
     </div>
+    <div class="sambungfloat"></div>
 
     <div class="boxbox bts-ats">
       <div class="bigbox">
