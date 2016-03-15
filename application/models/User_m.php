@@ -79,6 +79,20 @@ class User_m extends CI_Model {
 		$query = $this->db->get();
 		return $query->row();
 	}
+	public function getuserinvalid(){
+		$this->db->select('*');
+		$this->db->from('user');
+		$this->db->where('kondisi','invalid');
+		$query = $this->db->get();
+		return $query->result();
+	}
+	public function getuservalid(){
+		$this->db->select('*');
+		$this->db->from('user');
+		$this->db->where('kondisi','valid');
+		$query = $this->db->get();
+		return $query->result();
+	}
 	public function detail_user2 ($id){
 		$this->db->select('*');
 		$this->db->from('user');

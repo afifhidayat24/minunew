@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-require_once (APPPATH. "core/A_Controller.php");
+require_once (APPPATH. "core/SU_Controller.php");
 
-class Cuser extends A_Controller {
+class Cmanuser extends SU_Controller {
 
 	public function __construct()
 	{
@@ -17,12 +17,11 @@ class Cuser extends A_Controller {
 	public function index()
 	{
 
-		$data['page']='admin/vuser';
-		$data['nav']='admin/nav-admin';
+		$data['page']='admin/vmanuser';
+		$data['nav']='admin/nav-super';
 		$data['title'] = 'user';
 		$data['dtuser'] = $this->session->userdata('c_username');
-		$data['userdata'] = $this->User_m->getuservalid();
-		$data['userinval'] = $this->User_m->getuserinvalid();
+		$data['userdata'] = $this->User_m->getuser();
 		$data['gtuser'] = $this->User_m->detail_user($this->session->userdata('c_id'));
 
 		$this->load->view('admin/vdashboard', $data);
@@ -30,12 +29,12 @@ class Cuser extends A_Controller {
 	public function proses_delete_user ($id){
 		$this->User_m->delete_user($id);
 		$this->session->set_flashdata('messagehapus', 'Data User Barhasil dihapus');
-		redirect(base_url('admin/Cuser'));
+		redirect(base_url('admin/Cmanuser'));
 	}
 	public function detail_user ($id){
 		$data['page']='admin/vdetail';
 		$data['title'] = 'detail user';
-		$data['nav']='admin/nav-admin';
+		$data['nav']='admin/nav-super';
 		$data['dtuser'] = $this->session->userdata('c_username');
 		$data['htuser'] = $this->User_m->detail_user($id);
 		$data['gtuser'] = $this->User_m->detail_user($this->session->userdata('c_id'));
@@ -44,18 +43,22 @@ class Cuser extends A_Controller {
 	public function proses_add_user (){
 		$post = $this->input->post();
 		$data = array(
-			'pass' => md5($post['password']),
+			'username' => $post['username'],
 			'sid'   => $this->User_m->generate_id($post['status']),
 			'gender' => $post['gender'],
 			'status'   => $post['status'],
-			'foto_profile'   => 'default.jpg',
-			'kondisi'   => 'valid'
+			'kondisi'   => 'invalid'
 		);
-		$id = $this->input->post('id_user');
-		$this->User_m->edit_user ($id, $data);
+		$this->User_m->insert_user ($data);
+		$data2 = array('id_user' => $this->User_m->getLastID()->id_user);
+		if ($post['status'] == 'guru') {
+			$this->User_m->insert_guru ($data2);
+		} else {
+			$this->User_m->insert_murid ($data2);
+		}
 		$this->session->set_flashdata('message', 'User Barhasil ditambahkan');
 
-		redirect(base_url('admin/Cuser'));
+		redirect(base_url('admin/Cmanuser'));
 	}
 	public function proses_edit_user (){
 		$post = $this->input->post();
@@ -74,7 +77,7 @@ class Cuser extends A_Controller {
 		$this->User_m->edit_user ($id, $data);
 		$this->session->set_flashdata('message', 'User Barhasil diperbarui');
 
-		redirect(base_url('admin/Cuser/detail_user/'.$_POST['id_user']));
+		redirect(base_url('admin/Cmanuser/detail_user/'.$_POST['id_user']));
 	}
 	public function proses_ubah_password (){
 		$post = $this->input->post();
@@ -89,7 +92,7 @@ class Cuser extends A_Controller {
 		$this->User_m->edit_user ($id, $data);
 		$this->session->set_flashdata('message', 'password Barhasil diperbarui');
 
-		redirect(base_url('admin/Cuser/detail_user/'.$_POST['id_user']));
+		redirect(base_url('admin/Cmanuser/detail_user/'.$_POST['id_user']));
 	}
 	public function proses_add_foto_profil(){
 		$id = $this->input->post('id_user');
@@ -140,6 +143,6 @@ class Cuser extends A_Controller {
 		$this->User_m->edit_user ($id, $data);
 		$this->session->set_flashdata('message', 'Profil Berhasil Di Perbarui');
 
-		redirect(base_url('admin/Cuser/detail_user/'.$this->input->post('id_user')));
+		redirect(base_url('admin/Cmanuser/detail_user/'.$this->input->post('id_user')));
 	}
 }

@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Loginguru extends CI_Controller {
+require_once (APPPATH. "core/G_Controller.php");
+
+class Loginguru extends G_Controller {
 
   public function index(){
 

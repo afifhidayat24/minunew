@@ -1,20 +1,20 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 
-class M_Controller extends CI_Controller
+class A_Controller extends CI_Controller
 {
     public function __construct(){
         parent:: __construct();
 
-        $this->load->model('Akunmurid');
+        $this->load->model('Akunadmin');
 
-        $this->output->enable_profiler(true);
+        // $this->output->enable_profiler(true);
 
-        if(!$this->Akunmurid->validate_cookie()){
+        if(!$this->Akunadmin->validate_cookie()){
             $this->session->set_flashdata('error', 'Silahkan login terlebih dahulu');
-            header('location: '.base_url());
+            header('location: '.base_url().'admin/Loginadmin');
         }else{
-            $this->data['cookie'] = $this->Akunmurid->get_cookie();
+            $this->data['cookie'] = $this->Akunadmin->get_cookie();
         }
     }
 }

@@ -5,10 +5,10 @@ require_once (APPPATH. "core/MY_Controller.php");
 
 class cpage extends MY_Controller {
 	public function __construct()
-  {
-    parent:: __construct();
-    $this->load->model('admin_m');
-  }
+	{
+		parent:: __construct();
+		$this->load->model('admin_m');
+	}
 	public function select_kategori()
 	{
 		$data['page']='admin/adm-kategori-v';
@@ -33,30 +33,30 @@ class cpage extends MY_Controller {
 	public function proses_add_kategori (){
 		$post = $this->input->post();
 
-	    $data = array(
-	      'kode_kategori'  => $post['kode_kategori'],
-	      'judul_kategori' => $post['judul_kategori'],
-	      'ket_kategori'   => $post['ket_kategori'],
-	    );
+		$data = array(
+			'kode_kategori'  => $post['kode_kategori'],
+			'judul_kategori' => $post['judul_kategori'],
+			'ket_kategori'   => $post['ket_kategori'],
+		);
 
-	    $this->admin_m->insert_kategori ($data);
-	    $this->session->set_flashdata('message', 'Kategori Barhasil dibuat');
+		$this->admin_m->insert_kategori ($data);
+		$this->session->set_flashdata('message', 'Kategori Barhasil dibuat');
 
-	    redirect(base_url('admin/cpage/select_kategori'));
+		redirect(base_url('admin/cpage/select_kategori'));
 	}
 	public function proses_add_page (){
 		$post = $this->input->post();
 
-	    $data = array(
-	      'judul_page'=> $post['judul_page'],
-	      'isi_page'  => $post['isi_page'],
-	      'id_kategori'  => $post['id_kategori'],
-	    );
+		$data = array(
+			'judul_page'=> $post['judul_page'],
+			'isi_page'  => $post['isi_page'],
+			'id_kategori'  => $post['id_kategori'],
+		);
 
-	    $this->admin_m->insert_page ($data);
-	    $this->session->set_flashdata('message', 'page baru Barhasil dibuat');
+		$this->admin_m->insert_page ($data);
+		$this->session->set_flashdata('message', 'page baru Barhasil dibuat');
 
-	    redirect(base_url('admin/cpage/select_page'));
+		redirect(base_url('admin/cpage/select_page'));
 	}
 	public function proses_delete_kategori ($id){
 		$this->admin_m->delete_kategori($id);
@@ -78,18 +78,18 @@ class cpage extends MY_Controller {
 		$this->load->view('admin/vdashboard', $data);
 	}
 	public function proses_edit_kategori (){
-	$post = $this->input->post();
+		$post = $this->input->post();
 
-	    $data = array(
-	      'kode_kategori'  => $post['kode_kategori'],
-	      'judul_kategori' => $post['judul_kategori'],
-	      'ket_kategori'   => $post['ket_kategori'],
-	    );
+		$data = array(
+			'kode_kategori'  => $post['kode_kategori'],
+			'judul_kategori' => $post['judul_kategori'],
+			'ket_kategori'   => $post['ket_kategori'],
+		);
 
-	    $id = $this->input->post('id_kategori');
-	    $this->admin_m->update_kategori ($id, $data);
-	    $this->session->set_flashdata('message', 'Kategori Barhasil diperbarui');
+		$id = $this->input->post('id_kategori');
+		$this->admin_m->update_kategori ($id, $data);
+		$this->session->set_flashdata('message', 'Kategori Barhasil diperbarui');
 
-	    redirect(base_url('admin/cpage/select_kategori'));
+		redirect(base_url('admin/cpage/select_kategori'));
 	}
 }

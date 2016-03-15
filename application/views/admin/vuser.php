@@ -46,7 +46,11 @@
              <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
                   <div class="col-sm-6">
-                    <input type="text" name="username" class="form-control" placeholder="Username">
+                    <select name="id_user" class="form-control">
+                        <?php foreach ($userinval as $data): ?>
+                                <option value="<?php echo $data->id_user; ?>"><?php echo $data->username; ?></option>
+                        <?php endforeach; ?>
+                    </select>
                   </div>
                   <div class="sambungfloat"></div>
               </div>
@@ -75,7 +79,7 @@
                       <option> </option>
                       <option value="guru">Guru</option>
                       <option value="admin">Admin</option>
-                      <option value="murid">Murid</option>
+                      <option value="murid">Superadmin</option>
                     </select>
                   </div>
                   <div class="sambungfloat"></div>
