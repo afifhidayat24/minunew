@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-require_once (APPPATH. "core/MY_Controller.php");
+require_once (APPPATH. "core/A_Controller.php");
 
-class cpage extends MY_Controller {
+class cpage extends A_Controller {
 	public function __construct()
 	{
 		parent:: __construct();
@@ -33,14 +33,22 @@ class cpage extends MY_Controller {
 	public function proses_add_kategori (){
 		$post = $this->input->post();
 
-		$data = array(
-			'kode_kategori'  => $post['kode_kategori'],
-			'judul_kategori' => $post['judul_kategori'],
-			'ket_kategori'   => $post['ket_kategori'],
-		);
+		$this->form_validation->set_rules('kode_kategori', 'Kode Kategori', 'required|max_length[3]');
+		$this->form_validation->set_rules('judul_kategori', 'Judul Kategori', 'required');
+		$this->form_validation->set_rules('ket_kategori', 'Keterangan Kategori', 'required');
 
-		$this->admin_m->insert_kategori ($data);
-		$this->session->set_flashdata('message', 'Kategori Barhasil dibuat');
+		if ($this->form_validation->run() == FALSE){
+			$this->session->set_flashdata('message', validation_errors());
+		}else{
+			$data = array(
+				'kode_kategori'  => $post['kode_kategori'],
+				'judul_kategori' => $post['judul_kategori'],
+				'ket_kategori'   => $post['ket_kategori'],
+			);
+
+			$this->admin_m->insert_kategori ($data);
+			$this->session->set_flashdata('message', 'Kategori Barhasil dibuat');
+		}
 
 		redirect(base_url('admin/cpage/select_kategori'));
 	}

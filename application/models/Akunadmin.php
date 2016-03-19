@@ -22,7 +22,7 @@ class Akunadmin extends CI_Model {
 
 	public function do_login(){
 
-		$query = "Select * from user where sid='$this->id_admin' and pass=md5('$this->password')";
+		$query = "Select * from user where sid='$this->id_admin' and pass=md5('$this->password') and status='admin'";
 		$result = $this->db->query($query);
 		$rows = $result->row_array();
 
