@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>MI NU 2 Kradenan</title>
 	<link href="<?php echo base_url()?>assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<link href="<?php echo base_url()?>assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
 	<link href="<?php echo base_url()?>assets/css/video-js.css" rel="stylesheet" type="text/css" />
@@ -118,7 +118,7 @@
 			</div>
 			<div class="unicopy">
 				<div class="mainbox">
-					<div class="kiri">Copyright © 2015 <?php echo $title; ?></div>
+					<div class="kiri">Copyright © 2016 <?php echo $title; ?></div>
 					<div class="kanan"></div>
 					<div class="sambungfloat"></div>
 				</div>

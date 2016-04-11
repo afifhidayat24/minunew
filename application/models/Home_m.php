@@ -32,6 +32,22 @@ class Home_m extends CI_Model {
 	public function getartikelprestasi (){
 		$this->db->order_by('id_artikel', 'desc');
 		$this->db->where('id_kategori','18');
+		$this->db->limit(7);
+
+		$sdf=$this->db->get('artikel');
+		return $sdf->result();
+	}
+	public function getartikeljariyah (){
+		$this->db->order_by('id_artikel', 'desc');
+		$this->db->where('id_kategori','19');
+		$this->db->limit(5);
+
+		$sdf=$this->db->get('artikel');
+		return $sdf->result();
+	}
+	public function getartikelagenda (){
+		$this->db->order_by('id_artikel', 'desc');
+		$this->db->where('id_kategori','17');
 		$this->db->limit(5);
 
 		$sdf=$this->db->get('artikel');

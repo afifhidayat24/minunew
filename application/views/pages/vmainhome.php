@@ -121,50 +121,16 @@
                     <div class="bigbox">
                         <div class="lblttlbox"><h4 class="lblttl"><i class="fa fa-cab"></i> Agenda Madrasah</h4></div>
                         <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2">Materi Rapat Kordinasi Persiapan Kompetisi Sains MADRASAH (KSM) Tingkat Provinsi Jawa Timur</h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 2016</div>
-                                <div class="sambungfloat"></div>
+                        <?php foreach ($artbycatagenda as $abcagenda): ?>
+                            <div class="isilbl2">
+                                <h4 class="lblttl2"><?php echo $abcagenda->judul_artikel ?></h4>
+                                <div class="mediabox">
+                                    <div class="lbldll">oleh admin</div>
+                                    <div class="lbldll"><?php echo $abcagenda->tgl_artikel ?></div>
+                                    <div class="sambungfloat"></div>
+                                </div>
                             </div>
-                        </div>
-                        <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2"> Rapat Koordinasi Awal masuk KBM semester genap </h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 2016</div>
-                                <div class="sambungfloat"></div>
-                            </div>
-                        </div>
-                        <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2">Perubahan Susunan Anggaran Tahunan Tiap Tingkat Kelas </h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 2016</div>
-                                <div class="sambungfloat"></div>
-                            </div>
-                        </div>
-                        <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2">Kepanitiaan Persiapan Acara Akhirussanah Kelas 6 Tahun Ajaran 2015/2016 </h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 2016</div>
-                                <div class="sambungfloat"></div>
-                            </div>
-                        </div>
-                        <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2">Tim Sosialisasi PSB dan Pemerataan Informasi Mengenai Profil Sekolah di tiap PAUD</h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 2016</div>
-                                <div class="sambungfloat"></div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                         <div class="aalshow">Show All</div>
                     </div>
                 </div>
@@ -172,50 +138,16 @@
                     <div class="bigbox">
                         <div class="lblttlbox"><h4 class="lblttl"><i class="fa fa-bullhorn"></i> Info Jariyah</h4></div>
                         <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2">Musyawarah Pengadaan Kelengkapan Marcing Band </h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 201</div>
-                                <div class="sambungfloat"></div>
+                        <?php foreach ($artbycatjar as $abcjar): ?>
+                            <div class="isilbl2">
+                                <h4 class="lblttl2"><?php echo $abcjar->judul_artikel ?> </h4>
+                                <div class="mediabox">
+                                    <div class="lbldll">oleh admin</div>
+                                    <div class="lbldll"><?php echo $abcjar->tgl_artikel ?></div>
+                                    <div class="sambungfloat"></div>
+                                </div>
                             </div>
-                        </div>
-                        <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2">Rincian Pengadaan Kelengkapan Kelas Baru Pada Lantai 2</h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 2016</div>
-                                <div class="sambungfloat"></div>
-                            </div>
-                        </div>
-                        <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2">Rincian Daftar Siswa Yang Menerima Dana BOS Mulai Kelas 1 sampai dengan Kelas 5</h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 2016</div>
-                                <div class="sambungfloat"></div>
-                            </div>
-                        </div>
-                        <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2">Rencana Rehap Gedung Baru, Yang Bertujuan Untuk Menambah Aula Guna Meningkatkan Efektifitas Belajar Siswa</h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 2016</div>
-                                <div class="sambungfloat"></div>
-                            </div>
-                        </div>
-                        <!--list start-->
-                        <div class="isilbl2">
-                            <h4 class="lblttl2">Rincian Kebutuhan Renovasi Gedung Kelas 2 Yang akan digunakan untuk kelas Unggulan</h4>
-                            <div class="mediabox">
-                                <div class="lbldll">oleh admin</div>
-                                <div class="lbldll">6 Maret 2016</div>
-                                <div class="sambungfloat"></div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                         <div class="aalshow">Show All</div>
                     </div>
                 </div>
@@ -277,75 +209,75 @@
             <?php endforeach; ?>
 
 
-                <div class="aalshow">Show All</div>
-            </div>
-
-            <div class="boxbox">
-                <div class="lblttlbox"><h4 class="lblttl tengah"><i class="fa fa-desktop"></i> INFORMASI SEKOLAH</h4></div>
-
-                <!--list start-->
-                <?php foreach ($artbycat3 as $abc3): ?>
-                    <div class="isilbl">
-                        <h4 class="lblttl2"><?php echo $abc3->judul_artikel ?></h4>
-                        <div class="mediabox">
-                            <div class="lbldll">oleh admin</div>
-                            <div class="lbldll"><?php echo $abc3->tgl_artikel ?></div>
-                            <div class="sambungfloat"></div>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-
-                <div class="aalshow">Show All</div>
-            </div>
-            <div class="boxbox bts-ats ">
-                <div class="col-md-12">
-                    <div class="col-md-6">
-                        <span class="support btn"><a href="#"><i class="fa fa-comments"></i>&nbsp;&nbsp;Support Online</a></span>
-                    </div>
-                    <div class="col-md-6">
-                        <span class="support btn"><a href="<?php echo base_url()?>ctestimonial/"><i class="fa fa-comment"></i>&nbsp;&nbsp;Testimonial</a></span>
-                    </div>
-                </div>
-                <div class="sambungfloat"></div>
-            </div>
-            <div class="sambungfloat"></div>
-
-            <div class="boxbox bts-ats">
-                <div class="bigbox">
-                    <div class="lblttlbox"><h4 class="lblttl tengah"><i class="fa fa-desktop"></i> BERITA LAINNYA</h4></div>
-                    <div class="newstopimg bts-ats">
-                        <div class="newstoplks">Berita Terbaru</div>
-                        <img src="<?php echo base_url('assets/img/artikel');?>/<?php echo $artbycat1->gambar_artikel ?>" alt="<?php echo $artbycat1->gambar_artikel ?>" width="100%">
-                    </div>
-                    <h4 class="newstopttl"><?php echo $artbycat1->judul_artikel ?></h4>
-                    <div class="newstopdes">
-                        <p>
-                            <?php
-                            $string = $artbycat1->isi_artikel;
-                            $string = word_limiter($string, 35);
-                            ?>
-                            <?php echo $string;?><a href="<?php echo base_url()?>ctampilartikel/artikel/<?php echo $artbycat1->id_artikel?>"><b style="color:#0A3221">read more..</b></a></b>
-                        </p>
-                    </div>
-                    <div class="unirow">
-                        <?php foreach ($artbycat2 as $abc2): ?>
-                            <!-- List start  -->
-                            <div class="col-md-4 newstoplist">
-                                <div class="newstoplistimg">
-                                    <img src="<?php echo base_url('assets/img/artikel');?>/<?php echo $abc2->gambar_artikel ?>" alt="<?php echo $abc2->gambar_artikel ?>" width="100%">
-                                </div>
-                                <h5 class="newstoplistdes"><?php echo $abc2->judul_artikel ?></h5>
-                            </div>
-
-                            <!-- List start  -->
-                        <?php endforeach; ?>
-                        <div class="sambungfloat"></div>
-                    </div>
-                    <div class="allshow"><a style="color:red;" href="<?php echo base_url()?>cblog/">Show All</a></div>
-                </div>
-            </div>
+            <div class="aalshow">Show All</div>
         </div>
 
+        <div class="boxbox">
+            <div class="lblttlbox"><h4 class="lblttl tengah"><i class="fa fa-desktop"></i> INFORMASI SEKOLAH</h4></div>
+
+            <!--list start-->
+            <?php foreach ($artbycat3 as $abc3): ?>
+                <div class="isilbl">
+                    <h4 class="lblttl2"><?php echo $abc3->judul_artikel ?></h4>
+                    <div class="mediabox">
+                        <div class="lbldll">oleh admin</div>
+                        <div class="lbldll"><?php echo $abc3->tgl_artikel ?></div>
+                        <div class="sambungfloat"></div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+
+            <div class="aalshow">Show All</div>
+        </div>
+        <div class="boxbox bts-ats ">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <span class="support btn"><a href="#"><i class="fa fa-comments"></i>&nbsp;&nbsp;Support Online</a></span>
+                </div>
+                <div class="col-md-6">
+                    <span class="support btn"><a href="<?php echo base_url()?>ctestimonial/"><i class="fa fa-comment"></i>&nbsp;&nbsp;Testimonial</a></span>
+                </div>
+            </div>
+            <div class="sambungfloat"></div>
+        </div>
+        <div class="sambungfloat"></div>
+
+        <div class="boxbox bts-ats">
+            <div class="bigbox">
+                <div class="lblttlbox"><h4 class="lblttl tengah"><i class="fa fa-desktop"></i> BERITA LAINNYA</h4></div>
+                <div class="newstopimg bts-ats">
+                    <div class="newstoplks">Berita Terbaru</div>
+                    <img src="<?php echo base_url('assets/img/artikel');?>/<?php echo $artbycat1->gambar_artikel ?>" alt="<?php echo $artbycat1->gambar_artikel ?>" width="100%">
+                </div>
+                <h4 class="newstopttl"><?php echo $artbycat1->judul_artikel ?></h4>
+                <div class="newstopdes">
+                    <p>
+                        <?php
+                        $string = $artbycat1->isi_artikel;
+                        $string = word_limiter($string, 35);
+                        ?>
+                        <?php echo $string;?><a href="<?php echo base_url()?>ctampilartikel/artikel/<?php echo $artbycat1->id_artikel?>"><b style="color:#0A3221">read more..</b></a></b>
+                    </p>
+                </div>
+                <div class="unirow">
+                    <?php foreach ($artbycat2 as $abc2): ?>
+                        <!-- List start  -->
+                        <div class="col-md-4 newstoplist">
+                            <div class="newstoplistimg">
+                                <img src="<?php echo base_url('assets/img/artikel');?>/<?php echo $abc2->gambar_artikel ?>" alt="<?php echo $abc2->gambar_artikel ?>" width="100%">
+                            </div>
+                            <h5 class="newstoplistdes"><?php echo $abc2->judul_artikel ?></h5>
+                        </div>
+
+                        <!-- List start  -->
+                    <?php endforeach; ?>
+                    <div class="sambungfloat"></div>
+                </div>
+                <div class="allshow"><a style="color:red;" href="<?php echo base_url()?>cblog/">Show All</a></div>
+            </div>
+        </div>
     </div>
-    <div class="sambungfloat"></div>
+
+</div>
+<div class="sambungfloat"></div>
 </div>
