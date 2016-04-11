@@ -17,6 +17,8 @@ class chome extends CI_Controller{
     $data['artbycat'] = $this->Home_m->getartikel();
     $data['artbycat1'] = $this->Home_m->getartikel1();
     $data['artbycat2'] = $this->Home_m->getartikel2();
+    $data['artbycat3'] = $this->Home_m->getartikel3();
+    $data['artbycatpres'] = $this->Home_m->getartikelprestasi();
 
     $data['halaman'] = 'pages/vmainhome';
     $this->load->view('pages/vhome', $data);

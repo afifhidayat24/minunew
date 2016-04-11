@@ -120,6 +120,7 @@ class Cprogram extends CI_Controller {
 		$data = array(
 			'nm_program'  => $post['nm_program'],
 			'ket_program' => $post['ket_program'],
+			'kat_program' => $post['kat_program'],
 
 		);
 

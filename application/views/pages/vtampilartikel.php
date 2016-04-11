@@ -12,7 +12,7 @@
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading"><b><?php echo $artbycat->judul_artikel ?></b></h4></br>
-                <h5><b>Published ~ <?php echo $artbycat->tgl_artikel ?></b></h5>
+								<h5><b>Published ~ <?php echo $artbycat->tgl_artikel ?></b></h5>
 								<div class="bts-ats">
 								<?php echo $artbycat->isi_artikel ?>
 								</div>
