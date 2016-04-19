@@ -27,10 +27,10 @@
           <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-          <li><a href="<?php echo base_url('admin/Cartikel/') ?>"><i class="fa fa-circle-o"></i>Prestasi</a></li>
+          <li><a href="<?php echo base_url('admin/Cartikel/') ?>"><i class="fa fa-circle-o"></i>Tentang Kami</a></li>
           <li><a href="<?php echo base_url('admin/Cprogram/tambah_program') ?>"><i class="fa fa-circle-o"></i>Tambah Program</a></li>
           <li><a href="<?php echo base_url('admin/Cprogram/') ?>"><i class="fa fa-circle-o"></i>Daftar Program</a></li>
-          <li><a href="<?php echo base_url('admin/Cartikel/') ?>"><i class="fa fa-circle-o"></i>Pengajar</a></li>
+          <li><a href="<?php echo base_url('admin/Cuser') ?>"><i class="fa fa-circle-o"></i>User</a></li>
         </ul>
       </li>
       <li class="treeview">
@@ -64,11 +64,6 @@
           <li><a href="<?php echo base_url('admin/Cvideo/add_video')?>"><i class="fa fa-circle-o"></i>Tambah Video</a></li>
           <li><a href="<?php echo base_url('admin/Cvideo/')?>"><i class="fa fa-circle-o"></i>Semua Video</a></li>
         </ul>
-      </li>
-      <li class="treeview">
-        <a href="<?php echo base_url('admin/Cuser') ?>">
-          <i class="fa fa-user-plus"></i> <span>User</span>
-        </a>
       </li>
       <li class="treeview">
         <a href="<?php echo base_url('admin/Cdaftarguru_a/')?>">

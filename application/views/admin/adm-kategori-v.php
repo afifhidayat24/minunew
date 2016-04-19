@@ -55,13 +55,13 @@
 							edit</a></td>
 							<td>
 								<a href="<?php echo base_url('admin/cpage/proses_delete_kategori') ?>/<?php echo $data->id_kategori ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>
-								delete</a></td>
+									delete</a></td>
+								</tr>
+							<?php endforeach ?>
+							<tr>
+								<td></td>
 							</tr>
-						<?php endforeach ?>
-						<tr>
-							<td></td>
-						</tr>
-					</tbody>
-				</table>
+						</tbody>
+					</table>
+				</div>
 			</div>
-		</div>

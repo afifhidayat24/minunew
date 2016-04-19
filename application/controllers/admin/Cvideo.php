@@ -1,5 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+require_once (APPPATH. "core/A_Controller.php");
+
 class Cvideo extends A_Controller {
 
     public function __construct() {
@@ -42,8 +44,8 @@ class Cvideo extends A_Controller {
             'sinopsis' => $post['sinopsis'],
             'tgl_upload'   => $post['tgl_upload'],
             'id_kategori'   => $post['id_kategori'],
-            'id_user'   => $post['nm_guru'],
-            'mapel_id'   => $post['mapel']
+            'id_user'   => $this->session->userdata('c_id'),
+
         );
 
         if (isset($_FILES['video']['name']) && $_FILES['video']['name'] != '') {

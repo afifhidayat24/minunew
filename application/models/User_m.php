@@ -90,6 +90,7 @@ class User_m extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('user');
 		$this->db->where('kondisi','valid');
+		$this->db->where_not_in('status','superadmin');
 		$query = $this->db->get();
 		return $query->result();
 	}

@@ -13,14 +13,24 @@ class admin_m extends CI_Model {
 		$sdf=$this->db->get('kontak');
 		return $sdf->result();
 	}
-	public function getprogram (){
-		$sdf=$this->db->get('program');
-		return $sdf->result();
+	public function getprogramu (){
+		$this->db->select('*');
+		$this->db->from('program');
+		$this->db->where('kat_program','Unggulan');
+		$query = $this->db->get();
+		return $query->result();
+	}
+	public function getprograme (){
+		$this->db->select('*');
+		$this->db->from('program');
+		$this->db->where('kat_program','Ekstrakulikuler');
+		$query = $this->db->get();
+		return $query->result();
 	}
 	public function getvideo (){
 		$this->db->select('*');
 		$this->db->from('video');
-		// $this->db->join('user', 'user.id_user = video.id_user');
+		$this->db->join('user', 'user.id_user = video.id_user');
 		$query = $this->db->get();
 		return $query->result();
 	}

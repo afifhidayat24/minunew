@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-require_once (APPPATH. "core/MY_Controller.php");
+require_once (APPPATH. "core/A_Controller.php");
 
-class Cdaftarsiswa_a extends MY_Controller {
+class Cdaftarsiswa_a extends A_Controller {
 
 	public function __construct() {
 		parent::__construct();
@@ -12,7 +12,7 @@ class Cdaftarsiswa_a extends MY_Controller {
 	}
 
 	public function index() {
-		
+
 		$data['page']='admin/adm-daftar-siswa-v';
 		$data['nav']='admin/nav-admin';
 		$data['title'] = 'siswa';

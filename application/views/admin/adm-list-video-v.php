@@ -12,21 +12,21 @@
         <th colspan="2" style="text-align:center">Action</th>
     </tr>
     <tbody>
-       
+
        <?php foreach ($listvideo as $data): ?>
         <tr>
             <td></td>
             <td><?php echo $data->judul_video ?></td>
             <td><?php echo $data->tgl_upload ?></td>
             <td><?php echo $data->id_kategori ?></td>
-            <td><?php echo $data->id_user ?></td>
+            <td><?php echo $data->username ?></td>
             <td></td>
             <td style="text-align:center"><a href="">Detail</a></td>
             <td style="text-align:center"><a href="">Delete</a></td>
 
         </tr>
         <?php endforeach ?>
-        
+
     </tbody>
 </thead>
 </table>

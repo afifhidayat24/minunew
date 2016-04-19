@@ -11,7 +11,7 @@
 				</tr>
 				<tbody>
 					<?php $no=1?>
-					<?php foreach ($listprogram as $data): ?>
+					<?php foreach ($listprogramu as $data): ?>
 						<tr>
 							<th><?php echo $no ?></th>
 							<td><?php echo $data->nm_program ?></td>
@@ -41,7 +41,7 @@
 						</tr>
 						<tbody>
 							<?php $no=1?>
-							<?php foreach ($listprogram as $data): ?>
+							<?php foreach ($listprograme as $data): ?>
 								<tr>
 									<th><?php echo $no ?></th>
 									<td><?php echo $data->nm_program ?></td>

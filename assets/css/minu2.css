@@ -1,5 +1,5 @@
 /*default sistem*/
-a:hover	{ text-decoration: inherit!important; color: yellow;}
+a:hover	{ text-decoration: inherit!important; color: inherit;}
 a:focus { text-decoration: none!important; }
 a { color: white;}
 body	{ background-color: #eee; }

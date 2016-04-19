@@ -20,7 +20,8 @@ class Cprogram extends CI_Controller {
 		$data['nav']='admin/nav-admin';
 		$data['title'] = 'Tambah Program';
 		$data['dtuser'] = $this->session->userdata('c_username');
-		$data['listprogram'] = $this->Admin_m->getprogram();
+		$data['listprogramu'] = $this->Admin_m->getprogramu();
+		$data['listprograme'] = $this->Admin_m->getprograme();
 		$data['gtuser'] = $this->User_m->detail_user($this->session->userdata('c_id'));
 
 		$this->load->view('admin/vdashboard', $data);

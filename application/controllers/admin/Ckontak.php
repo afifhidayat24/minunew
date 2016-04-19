@@ -1,7 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+require_once (APPPATH. "core/A_Controller.php");
+
 class Ckontak extends A_Controller {
+
 
 	public function __construct() {
 		parent::__construct();

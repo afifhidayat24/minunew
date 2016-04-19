@@ -9,7 +9,7 @@
         <div class="icon">
           <i class="fa fa-user"></i>
         </div>
-          <a href="<?php echo base_url('admin/Cdaftarguru/')?>" class="small-box-footer">
+          <a href="<?php echo base_url('admin/Cdaftarguru_a/')?>" class="small-box-footer">
             More info <i class="fa fa-arrow-circle-right"></i>
           </a>
     </div>
@@ -24,7 +24,7 @@
       <div class="icon">
         <i class="fa fa-users"></i>
       </div>
-        <a href="<?php echo base_url('admin/Cdaftarsiswa/')?>" class="small-box-footer">
+        <a href="<?php echo base_url('admin/Cdaftarsiswa_a/')?>" class="small-box-footer">
           More info <i class="fa fa-arrow-circle-right"></i>
         </a>
     </div>
