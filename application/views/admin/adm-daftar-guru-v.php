@@ -23,95 +23,9 @@
 						<td><?php echo $guru->tgl_lahir ?></td>
 						<td><?php echo $guru->jabatan ?></td>
 						<td><?php echo $guru->gender ?></td>
-						<td style="text-align:center"><a href="<?php echo base_url('admin/Cdaftarguru_a/proses_update_dataguru') ?>"class="btn btn-info"data-toggle="modal" data-target=".<?php echo $guru->id_guru ?>">Detail</a></td>
-						<td style="text-align:center"><a href="<?php echo base_url('admin/Cdaftarguru_a/proses_delete_guru') ?>/<?php echo $guru->id_guru ?>"class="btn btn-danger"data-toggle="modal">Delete</a></td>
+						<td style="text-align:center"><a href="<?php echo base_url('admin/Cdaftareditguru_a/edit_guru') ?>/<?php echo $guru->id_guru ?>"class="btn btn-info">Detail</a></td>
+						<td style="text-align:center"><a onclick="javascript:return confirm('anda yakin ingin menghapus');" href="<?php echo base_url('admin/Cdaftarguru_a/proses_delete_guru') ?>/<?php echo $guru->id_guru ?>"class="btn btn-danger"data-toggle="modal">Delete</a></td>
 					</tr>
-					<div class="modal fade <?php echo $guru->id_guru ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-									<h4 class="modal-title" id="exampleModalLabel">Edit Data Guru</h4>
-								</div>
-								<div class="modal-body">
-									<form action="<?php echo base_url('admin/Cdaftarguru_a/proses_update_dataguru') ?>" method="post">
-										<input type="hidden" name="id_user" value="<?php echo $guru->id_guru ?>">
-										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-2 control-label">Nama Guru</label>
-											<div class="col-sm-6">
-												<input type="text" name="nama_guru" class="form-control" value="<?php echo $guru->nama_guru ?>" placeholder="Username">
-											</div>
-											<div class="sambungfloat"></div>
-										</div>
-										<div class="form-group bts-ats">
-											<label for="inputEmail3" class="col-sm-2 control-label">Nip</label>
-											<div class="col-sm-5">
-												<input type="text" name="nip" class="form-control" value="<?php echo $guru->nip ?>" placeholder="Masukkan NIP">
-											</div>
-											<div class="sambungfloat"></div>
-										</div>
-										<div class="form-group bts-ats">
-											<label for="inputEmail3" class="col-sm-2 control-label">Tanggal Lahir</label>
-											<div class="col-sm-5">
-												<input type="text" name="tgl_lahir" class="form-control" value="<?php echo $guru->tgl_lahir ?>" placeholder="Masukkan Tanggal Lahir">
-											</div>
-											<div class="sambungfloat"></div>
-										</div>
-										<div class="form-group bts-ats">
-											<label for="inputEmail3" class="col-sm-2 control-label">Gender</label>
-											<div class="col-sm-3">
-												<select class="form-control" name="gender" value="<?php echo $guru->gender ?>">
-													<option> <?php echo $guru->gender ?> </option>
-													<option value"male">Laki-Laki</option>
-													<option value"female">Perempuan</option>
-												</select>
-											</div>
-											<div class="sambungfloat"></div>
-										</div>
-										<div class="form-group bts-ats">
-											<label for="inputEmail3" class="col-sm-2 control-label">Jabatan</label>
-											<div class="col-sm-5">
-												<input type="text" name="jabatan" class="form-control" value="<?php echo $guru->jabatan ?>" placeholder="Masukkan Jabatan Sekarang">
-											</div>
-											<div class="sambungfloat"></div>
-										</div>
-										<div class="form-group bts-ats">
-											<label for="inputEmail3" class="col-sm-2 control-label">Status Guru</label>
-											<div class="col-sm-5">
-												<input type="text" name="status_guru" class="form-control" value="<?php echo $guru->status_guru ?>" placeholder="Masukkan Status">
-											</div>
-											<div class="sambungfloat"></div>
-										</div>
-										<div class="form-group bts-ats">
-											<label for="inputEmail3" class="col-sm-2 control-label">Alamat</label>
-											<div class="col-sm-5">
-												<textarea type="text" name="alamat" class="form-control" value="<?php echo $guru->alamat ?>" placeholder="Masukkan Alamat Sekarang"><?php echo $guru->alamat ?></textarea>
-											</div>
-											<div class="sambungfloat"></div>
-										</div>
-										<div class="form-group bts-ats">
-											<label for="inputEmail3" class="col-sm-2 control-label">Nama Ibu</label>
-											<div class="col-sm-5">
-												<input type="text" name="nm_ibu" class="form-control" value="<?php echo $guru->nm_ibu ?>" placeholder="Masukkan Nama IBU">
-											</div>
-											<div class="sambungfloat"></div>
-										</div>
-										<div class="form-group bts-ats">
-											<label for="inputEmail3" class="col-sm-2 control-label">Kode Guru</label>
-											<div class="col-sm-5">
-												<input type="text" name="kode_guru" class="form-control" value="<?php echo $guru->kode_guru ?>" placeholder="Masukkan Kode">
-											</div>
-											<div class="sambungfloat"></div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-											<button type="submit" name="submit" value="submit" class="btn btn-primary">Perbarui</button>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
 				<?php endforeach ?>
 			</tbody>
 		</thead>

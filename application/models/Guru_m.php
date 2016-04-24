@@ -23,6 +23,13 @@ class Guru_m extends CI_Model{
       $this->db->where('id_guru', $id);
       $this->db->update('guru', $data2);
   }
+  public function detailguru($id_guru){
+      $this->db->select('*');
+      $this->db->from('guru');
+      $this->db->where('id_guru', $id_guru);
+      $query = $this->db->get();
+      return $query;
+  }
   public function delete_guru ($id){
       $this->db->where('id_guru', $id);
       $this->db->delete('guru');
