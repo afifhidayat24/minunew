@@ -54,7 +54,7 @@
 						<td><a href="<?php echo base_url('admin/cpage/edit_kategori') ?>/<?php echo $data->id_kategori ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-square-o"></i>
 							edit</a></td>
 							<td>
-								<a onclick="javascript:return confirm('anda yakin ingin menghapus');" href="<?php echo base_url('admin/cpage/proses_delete_kategori') ?>/<?php echo $data->id_kategori ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>
+								<a onclick="javascript:return confirm('anda tidak bisa menghapus, Hanya Bisa Edit Kategori');" href="" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>
 									delete</a></td>
 								</tr>
 							<?php endforeach ?>

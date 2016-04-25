@@ -1,81 +1,83 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+require_once (APPPATH. "core/G_Controller.php");
 
-class Cprogram extends CI_Controller {
+class Cartikel_g extends G_Controller {
 
 	public function __construct()
 	{
 		parent:: __construct();
 		$this->load->model('User_m');
-		$this->load->model('Admin_m');
-		$this->load->library('Resize');
+		$this->load->model('admin_m');
+		$this->load->library('resize');
 
 	}
 
 	public function index()
 	{
 
-		$data['page']='admin/list-program-v';
-		$data['nav']='admin/nav-admin';
-		$data['title'] = 'Tambah Program';
+		$data['page']='admin/list-guru-artikel-v';
+		$data['nav']='admin/nav-guru';
+		$data['title'] = 'tambah artikel';
 		$data['dtuser'] = $this->session->userdata('c_username');
-		$data['listprogramu'] = $this->Admin_m->getprogramu();
-		$data['listprograme'] = $this->Admin_m->getprograme();
+		$data['listartikel'] = $this->admin_m->getartikel();
 		$data['gtuser'] = $this->User_m->detail_user($this->session->userdata('c_id'));
 
 		$this->load->view('admin/vdashboard', $data);
 	}
-	public function tambah_program () {
-		$data['page']='admin/add-program-v';
-		$data['nav']='admin/nav-admin';
-		$data['title'] = 'tambah program';
-		$data['dtuser'] = $this->session->userdata('c_username');
-		$data['userdata'] = $this->User_m->getuser();
-		$data['gtuser'] = $this->User_m->detail_user($this->session->userdata('c_id'));
-		$this->load->view('admin/vdashboard', $data);
-
-	}
-	public function proses_delete_program ($id){
-		$this->Admin_m->delete_program($id);
-		$this->session->set_flashdata('messagehapus', 'program Barhasil dihapus');
-		redirect(base_url('admin/Cprogram/'));
-	}
-
-	public function edit_program ($id_program) {
-		$data['nav']='admin/nav-admin';
-		$data['page']='admin/edit-program-v';
-		$data['title'] = 'edit program -'.$this->Admin_m->detailprogram($id_program)->row('username');
+	public function tambah_artikel () {
+		$data['page']='admin/add-guru-artikel-v';
+		$data['nav']='admin/nav-guru';
+		$data['title'] = 'tambah artikel';
 		$data['dtuser'] = $this->session->userdata('c_username');
 		$data['userdata'] = $this->User_m->getuser();
-		$data['getkategori']= $this->Admin_m->getkategori();
 		$data['gtuser'] = $this->User_m->detail_user($this->session->userdata('c_id'));
-		$data['detailprogram']= $this->Admin_m->detailprogram($id_program)->row();
+		$data['getkategori']= $this->admin_m->getkategori();
+		$this->load->view('admin/vdashboard', $data);
+
+	}
+	public function proses_delete_artikel ($id){
+		$this->admin_m->delete_artikel($id);
+		$this->session->set_flashdata('messagehapus', 'artikel Barhasil dihapus');
+		redirect(base_url('admin/Cartikel_g/'));
+	}
+
+	public function edit_artikel ($id_artikel) {
+		$data['nav']='admin/nav-guru';
+		$data['page']='admin/edit-guru-artikel-v';
+		$data['title'] = 'edit artikel -'.$this->admin_m->detailartikel($id_artikel)->row('username');
+		$data['dtuser'] = $this->session->userdata('c_username');
+		$data['userdata'] = $this->User_m->getuser();
+		$data['getkategori']= $this->admin_m->getkategori();
+		$data['gtuser'] = $this->User_m->detail_user($this->session->userdata('c_id'));
+		$data['detailartikel']= $this->admin_m->detailartikel($id_artikel)->row();
 		$this->load->view('admin/vdashboard', $data);
 
 	}
 
-	public function proses_edit_program (){
+	public function proses_edit_artikel (){
 		$post = $this->input->post();
 
 		$data = array(
-			'nm_program'  => $post['nm_program'],
-			'ket_program' => $post['ket_program'],
-			'kat_program' => $post['kat_program'],
+			'judul_artikel'  => $post['judul_artikel'],
+			'tgl_artikel' => $post['tgl_artikel'],
+			'isi_artikel'   => $post['isi_artikel'],
+			'id_kategori'   => $post['id_kategori']
 		);
 
-		$id = $this->input->post('id_program');
-		$file = $this->Admin_m->detailprogram($id)->row('img_program');
+		$id = $this->input->post('id_artikel');
+		$file = $this->admin_m->detailartikel($id)->row('gambar_artikel');
 		if (!empty($_FILES["photo"]["tmp_name"])) {
 			if ($file != "default.jpg") {
-				unlink("assets/img/program/$file");
+				unlink("assets/img/artikel/$file");
 			}
 		}
 
-		$namafolder="assets/img/program/"; //folder tempat menyimpan file
+		$namafolder="assets/img/artikel/"; //folder tempat menyimpan file
 		if (!empty($_FILES["photo"]["tmp_name"]))
 		{
-			$LastID = $this->Admin_m->getLastID()->id_program;
+			$LastID = $this->admin_m->getLastID()->id_artikel;
 			$newID = ++$LastID;
 			$namaExpl = explode('.', basename($_FILES['photo']['name']));
 			$jmlArr = count($namaExpl);
@@ -83,7 +85,7 @@ class Cprogram extends CI_Controller {
 			for ($i = 0; $i < $jmlArr-1; $i++) {
 				$namaFix .= $namaExpl[$i];
 			}
-			$namafileOri = strtolower(url_title("minu program".'-'.$post['nm_program'].'-'.$newID.'-'.date('Ymd').'-'.time('Hms')).'.'.$namaExpl[$jmlArr-1]);
+			$namafileOri = strtolower(url_title("minu artikel".'-'.$post['judul_artikel'].'-'.$newID.'-'.date('Ymd').'-'.time('Hms')).'.'.$namaExpl[$jmlArr-1]);
 			// replace file name
 			$_FILES['photo']['name'] = $namafileOri;
 			$jenis_gambar=$_FILES['photo']['type'];
@@ -92,7 +94,7 @@ class Cprogram extends CI_Controller {
 				$gambar = $namafolder . basename($_FILES['photo']['name']);
 				if (move_uploaded_file($_FILES['photo']['tmp_name'], $gambar)) {
 					//echo "Gambar yang di upload: ".basename($_FILES['epsimage']['name']);
-					$data['img_program'] = basename($_FILES['photo']['name']);
+					$data['gambar_artikel'] = basename($_FILES['photo']['name']);
 				} else {
 					echo "Gambar gagal dikirim";
 				}
@@ -100,35 +102,36 @@ class Cprogram extends CI_Controller {
 				echo "Jenis gambar yang anda kirim salah. Harus .jpg .gif .png";
 			}
 		} else {
-			$data['img_program'] = $post['gambarsaatini'];
+			$data['gambar_artikel'] = $post['gambarsaatini'];
 		}
 		$a = basename($_FILES['photo']['name']);
 		//file yang akan di resize
-		$file = "assets/img/program/$a";
+		$file = "assets/img/artikel/$a";
 		//output resize (bisa juga di ubah ke format yang berbeda ex: jpg, png dll)
-		$resizedFile = "assets/img/program/$a";
+		$resizedFile = "assets/img/artikel/$a";
 		$this->resize->smart_resize_image(null , file_get_contents($file), 400 , 250 , false , $resizedFile , true , false ,35 );
 
-		$this->Admin_m->edit_program ($id, $data);
-		$this->session->set_flashdata('message', 'program Barhasil diperbarui');
+		$this->admin_m->update_artikel ($id, $data);
+		$this->session->set_flashdata('message', 'Artikel Barhasil diperbarui');
 
-		redirect(base_url('admin/Cprogram/edit_program/'.$_POST['id_program']));
+		redirect(base_url('admin/Cartikel_g/edit_artikel/'.$_POST['id_artikel']));
 	}
 
-	public function proses_add_program (){
+	public function proses_add_artikel (){
 		$post = $this->input->post();
 
 		$data = array(
-			'nm_program'  => $post['nm_program'],
-			'ket_program' => $post['ket_program'],
-			'kat_program' => $post['kat_program'],
-
+			'judul_artikel'  => $post['judul_artikel'],
+			'tgl_artikel' => $post['tgl_artikel'],
+			'isi_artikel'   => $post['isi_artikel'],
+			'id_kategori'   => $post['id_kategori'],
+			'id_user'   => $this->session->userdata('c_id')
 		);
 
-		$namafolder="assets/img/program/"; //folder tempat menyimpan file
+		$namafolder="assets/img/artikel/"; //folder tempat menyimpan file
 		if (!empty($_FILES["photo"]["tmp_name"]))
 		{
-			$LastID = $this->Admin_m->getLastID()->id_program;
+			$LastID = $this->admin_m->getLastID()->id_artikel;
 			$newID = ++$LastID;
 			$namaExpl = explode('.', basename($_FILES['photo']['name']));
 			$jmlArr = count($namaExpl);
@@ -136,7 +139,7 @@ class Cprogram extends CI_Controller {
 			for ($i = 0; $i < $jmlArr-1; $i++) {
 				$namaFix .= $namaExpl[$i];
 			}
-			$namafileOri = strtolower(url_title("minu program".'-'.$post['nm_program'].'-'.$newID.'-'.date('Ymd').'-'.time('Hms')).'.'.$namaExpl[$jmlArr-1]);
+			$namafileOri = strtolower(url_title("minu artikel".'-'.$post['judul_artikel'].'-'.$newID.'-'.date('Ymd').'-'.time('Hms')).'.'.$namaExpl[$jmlArr-1]);
 			// replace file name
 			$_FILES['photo']['name'] = $namafileOri;
 			$jenis_gambar=$_FILES['photo']['type'];
@@ -145,7 +148,7 @@ class Cprogram extends CI_Controller {
 				$gambar = $namafolder . basename($_FILES['photo']['name']);
 				if (move_uploaded_file($_FILES['photo']['tmp_name'], $gambar)) {
 					//echo "Gambar yang di upload: ".basename($_FILES['epsimage']['name']);
-					$data['img_program'] = basename($_FILES['photo']['name']);
+					$data['gambar_artikel'] = basename($_FILES['photo']['name']);
 				} else {
 					echo "Gambar gagal dikirim";
 				}
@@ -153,19 +156,19 @@ class Cprogram extends CI_Controller {
 				echo "Jenis gambar yang anda kirim salah. Harus .jpg .gif .png";
 			}
 		} else {
-			$data['img_program'] = ('default.jpg');
+			$data['gambar_artikel'] = ('default.jpg');
 		}
 		$a = basename($_FILES['photo']['name']);
 		//file yang akan di resize
-		$file = "assets/img/program/$a";
+		$file = "assets/img/artikel/$a";
 		//output resize (bisa juga di ubah ke format yang berbeda ex: jpg, png dll)
-		$resizedFile = "assets/img/program/$a";
+		$resizedFile = "assets/img/artikel/$a";
 		$this->resize->smart_resize_image(null , file_get_contents($file), 400 , 250 , false , $resizedFile , true , false ,35 );
 
-		$this->Admin_m->insert_program ($data);
-		$this->session->set_flashdata('message', 'program Baru Barhasil dibuat');
+		$this->admin_m->insert_artikel ($data);
+		$this->session->set_flashdata('message', 'Artikel Baru Barhasil dibuat');
 
-		redirect(base_url('admin/Cprogram/tambah_program'));
+		redirect(base_url('admin/Cartikel_g/'));
 	}
 
 

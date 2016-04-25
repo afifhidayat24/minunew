@@ -54,6 +54,10 @@ class admin_m extends CI_Model {
 		$this->db->where('id_kategori', $id);
 		$this->db->delete('kategori');
 	}
+	public function delete_program ($id){
+		$this->db->where('id_program', $id);
+		$this->db->delete('program');
+	}
 	public function delete_page ($id){
 		$this->db->where('id_page', $id);
 		$this->db->delete('page');
@@ -72,6 +76,10 @@ class admin_m extends CI_Model {
 	public function update_kategori($id, $data){
 		$this->db->where('id_kategori', $id);
 		$this->db->update('kategori', $data);
+	}
+	public function edit_program($id, $data){
+		$this->db->where('id_program', $id);
+		$this->db->update('program', $data);
 	}
 	public function insert_artikel ($data){
 		$this->db->insert('artikel', $data);
@@ -117,6 +125,13 @@ class admin_m extends CI_Model {
 		$this->db->join('user', 'user.id_user = artikel.id_user');
 		$this->db->join('kategori', 'kategori.id_kategori = artikel.id_kategori');
 		$this->db->where('id_artikel', $id_artikel);
+		$query = $this->db->get();
+		return $query;
+	}
+	public function detailprogram($id){
+		$this->db->select('*');
+		$this->db->from('program');
+		$this->db->where('id_program', $id);
 		$query = $this->db->get();
 		return $query;
 	}

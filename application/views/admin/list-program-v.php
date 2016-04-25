@@ -6,7 +6,7 @@
 				<tr class="col-menu-adm">
 					<th>No</th>
 					<th>Nama Program</th>
-					<th>Kategori</th>
+					<th>Status</th>
 					<th  style="text-align:center">Action</th>
 				</tr>
 				<tbody>
@@ -15,10 +15,10 @@
 						<tr>
 							<th><?php echo $no ?></th>
 							<td><?php echo $data->nm_program ?></td>
-							<td></td>
-							<td style="text-align:center"><a href="/" class="btn btn-info btn-xs"><i class="fa fa-pencil-square-o"></i>
+							<td>Aktif</td>
+							<td style="text-align:center"><a href="<?php echo base_url('admin/Cprogram/edit_program') ?>/<?php echo $data->id_program ?>" class="btn btn-info btn-xs"><i class="fa fa-pencil-square-o"></i>
 								Edit</a>
-								<a href="/" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>
+								<a onclick="javascript:return confirm('anda yakin ingin menghapus program unggulan');" href="<?php echo base_url('admin/Cprogram/proses_delete_program') ?>/<?php echo $data->id_program ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>
 									Delete</a></td>
 								</tr>
 								<?php $no++?>
@@ -36,7 +36,7 @@
 						<tr class="col-menu-adm">
 							<th>No</th>
 							<th>Nama Program</th>
-							<th>Kategori</th>
+							<th>Status</th>
 							<th  style="text-align:center">Action</th>
 						</tr>
 						<tbody>
@@ -45,10 +45,10 @@
 								<tr>
 									<th><?php echo $no ?></th>
 									<td><?php echo $data->nm_program ?></td>
-									<td></td>
-									<td style="text-align:center"><a href="/" class="btn btn-info btn-xs"><i class="fa fa-pencil-square-o"></i>
+									<td>Aktif</td>
+									<td style="text-align:center"><a href="<?php echo base_url('admin/Cprogram/edit_program') ?>/<?php echo $data->id_program ?>" class="btn btn-info btn-xs"><i class="fa fa-pencil-square-o"></i>
 										Edit</a>
-										<a href="/" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>
+										<a onclick="javascript:return confirm('anda yakin ingin menghapus program ekstrakulikuler');" href="<?php echo base_url('admin/Cprogram/proses_delete_program') ?>/<?php echo $data->id_program ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>
 											Delete</a></td>
 										</tr>
 										<?php $no++?>

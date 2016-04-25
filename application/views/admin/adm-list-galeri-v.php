@@ -1,19 +1,33 @@
-<div class="container">
+<div class="whitebox">
 	<h4>Daftar Galeri MINU 2</h4>
-</div>
+	<table class="table table-bordered table-hover example2">
+		<thead>
+			<tr class="col-menu-adm">
+				<th>No</th>
+				<th>Gambar</th>
+				<th>Judul</th>
+				<th>Author</th>
+				<th>Status</th>
+				<th  style="text-align:center">Action</th>
+			</tr>
+			<tbody>
+				<?php $no=1?>
+				<?php foreach ($listgaleri as $dtgaleri): ?>
+					<tr>
+						<th><?php echo $no ?></th>
+						<td><img src="<?php echo base_url('assets/img/galeri')  ?>/<?php echo $dtgaleri->img_galeri ?>" width="10%"></td>
+						<td><?php $limit = $dtgaleri->judul_img; echo $limit = word_limiter($limit, 4); ?></td>
+						<td>Admin</td>
+						<td></td>
+						<td style="text-align:center"><a href="" class="btn btn-info"><i class="fa fa-pencil-square-o"></i>
+							Edit</a>
+							<a onclick="javascript:return confirm('anda yakin ingin menghapus');" href="" class="btn btn-danger"><i class="fa fa-trash-o"></i>
+								Delete</a></td>
+							</tr>
+							<?php $no++?>
+						<?php endforeach ?>
 
-<?php foreach ($listgaleri as $dtgaleri): ?>
-<div class="col-md-3">
-	<div class="whitebox">
-		<div class="poster">
-			<img src="<?php echo base_url('assets/img/galeri')  ?>/<?php echo $dtgaleri->img_galeri ?>" width="100%">
+					</tbody>
+				</thead>
+			</table>
 		</div>
-		<div class="jdlposter"><h4><?php echo $dtgaleri->judul_img ?></h4></div>
-		<div class="col-md-5 btn btn-xs btn-info">Edite</div>
-		<div class="col-md-2"></div>
-		<div class="col-md-5 btn btn-xs btn-danger">Delete</div>
-		<div class="sambungfloat"></div>
-	</div>
-</div>
-
-<?php endforeach ?>

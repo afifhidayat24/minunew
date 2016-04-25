@@ -70,7 +70,7 @@
 			<div class="sambungfloat"></div>
 		</div>
 		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+			<button type="button" class="btn btn-default">Batal</button>
 			<button type="submit" name="submit" value="submit" class="btn btn-primary">Perbarui</button>
 		</div>
 	</form>

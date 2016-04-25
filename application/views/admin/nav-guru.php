@@ -21,6 +21,17 @@
         </a>
       </li>
       <li class="treeview">
+        <a href="#">
+          <i class="fa fa-edit"></i>
+          <span>Blog</span>
+          <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="<?php echo base_url('admin/Cartikel_g/tambah_artikel') ?>"><i class="fa fa-circle-o"></i>Tambah Artikel</a></li>
+          <li><a href="<?php echo base_url('admin/Cartikel_g/') ?>"><i class="fa fa-circle-o"></i>Semua Artikel</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
         <a href="">
           <i class="fa fa-file-video-o"></i> <span>Video Pembelajaran</span>
           <i class="fa fa-angle-left pull-right"></i>
@@ -31,33 +42,8 @@
         </ul>
       </li>
       <li class="treeview">
-        <a href="<?php echo base_url('admin/Cdaftarguru/')?>">
-          <i class="fa fa-user"></i> <span>Daftar Guru</span>
-        </a>
-      </li>
-      <li class="treeview">
-        <a href="<?php echo base_url('admin/Cdaftarsiswa/')?>">
-          <i class="fa fa-users"></i> <span>Daftar Siswa</span>
-        </a>
-      </li>
-       <li class="treeview">
         <a href="">
-          <i class="fa fa-book"></i> <span>Mata Pelajaran</span>
-        </a>
-      </li>
-      <li class="treeview">
-        <a href="">
-          <i class="fa fa-user"></i> <span>Ekstra kulikuler</span>
-        </a>
-      </li>
-       <li class="treeview">
-        <a href="<?php echo base_url('admin/Csoal/')?>">
-          <i class="fa fa-user"></i> <span>Bank Soal</span>
-        </a>
-      </li>
-      <li class="treeview">
-        <a href="">
-          <i class="fa fa-comments-o"></i> <span>Guru Menjawab</span>
+          <i class="fa fa-comments-o"></i> <span>Inbox</span>
         </a>
       </li>
   </section>

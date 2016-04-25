@@ -27,7 +27,7 @@
           <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-          <li><a href="<?php echo base_url('admin/Cartikel/') ?>"><i class="fa fa-circle-o"></i>Tentang Kami</a></li>
+          <li><a href="<?php echo base_url('admin/Cpage/select_page') ?>"><i class="fa fa-circle-o"></i>Tentang Kami</a></li>
           <li><a href="<?php echo base_url('admin/Cprogram/tambah_program') ?>"><i class="fa fa-circle-o"></i>Tambah Program</a></li>
           <li><a href="<?php echo base_url('admin/Cprogram/') ?>"><i class="fa fa-circle-o"></i>Daftar Program</a></li>
           <li><a href="<?php echo base_url('admin/Cuser') ?>"><i class="fa fa-circle-o"></i>User</a></li>

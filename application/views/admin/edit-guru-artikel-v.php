@@ -10,7 +10,7 @@
           <i class="fa fa-check-circle"></i> <strong><?php echo $this->session->flashdata('message');?></strong>
         </div>
      <?php endif ?>
-  <form action="<?php echo base_url('admin/Cartikel/proses_edit_artikel') ?>" method="post" enctype="multipart/form-data">
+  <form action="<?php echo base_url('admin/Cartikel_g/proses_edit_artikel') ?>" method="post" enctype="multipart/form-data">
   <div class="col-md-8">
   <h3 class="container">Edit Artikel</h3>
   <hr/>
