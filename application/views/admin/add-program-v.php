@@ -10,9 +10,8 @@ tinymce.init({
         <hr/>
         <input type="hidden" name="id_user" value="">
         <div class="form-group bts-ats">
-            <label class="col-sm-2 control-label">Nama Program</label>
-            <div class="col-sm-10">
-                <input type="text" name="nm_program" class="form-control" placeholder="judul">
+            <div class="col-sm-12">
+                <input type="text" name="nm_program" class="form-control" placeholder="Nama Program">
             </div>
             <div class="sambungfloat"></div>
         </div>
@@ -22,7 +21,7 @@ tinymce.init({
         <button type="submit" name="submit" value="submit" class="btn kanan bts-ats btn-primary">Publish</button>
     </div>
     <div class="col-md-4 whitebox">
-        <div class=" form-group artikelkat">
+        <div style="margin-top: 138px;" class=" form-group artikelkat">
             <div class="form-group bts-ats">
                 <label class="col-sm-3 control-label">Kategori</label>
                 <div class="col-sm-8">
@@ -39,8 +38,9 @@ tinymce.init({
                 <div class="col-sm-8">
                     <form>
                         <img id="preview" class="imgbox" src="<?php echo base_url('assets/img/program/default.jpg') ?>" alt="preview gambar">
-                        <input id="filedata" type="file" name="photo" accept="image/*" />
+                        <input style="margin-top: 15px;" id="filedata" type="file" name="photo" accept="image/*" />
                     </form>
+                    <div style="margin-top: 12px;">Jenis gambar yang anda uploud Harus .jpg .gif .png</div>
                 </div>
                 <div class="sambungfloat"></div>
             </div>

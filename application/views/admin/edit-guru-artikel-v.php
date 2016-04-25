@@ -54,6 +54,7 @@
                   <input type="hidden" name="gambarsaatini" value="<?php echo $detailartikel->gambar_artikel ?>">
                       <img id="preview" class="imgbox" src="<?php echo base_url('assets/img/artikel') ?>/<?php echo $detailartikel->gambar_artikel ?>" alt="preview gambar">
                       <input id="filedata" type="file" name="photo" accept="image/*" />
+                      <span>Jenis gambar yang anda uploud Harus .jpg .gif .png</span>
                   </div>
                 <div class="sambungfloat"></div>
               </div>

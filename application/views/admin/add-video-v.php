@@ -16,13 +16,14 @@
           <img id="preview" class="imgbox" src="<?php echo base_url('assets/img/artikel/default.jpg') ?>" alt="preview gambar">
           <input id="filedata" type="file" name="img_galeri" accept="image/*" />
         </form>
+        <div style="margin-top: 12px;">Jenis gambar yang anda uploud Harus .jpg .gif .png</div>
       </div>
       <div class="sambungfloat"></div>
     </div>
     <div class="form-group">
       <label class="col-sm-2">Judul Video</label>
       <div class="col-sm-10">
-        <input type="text" name="judul_video" class="form-control" placeholder="judul video">
+        <input type="text" name="judul_video" class="form-control" placeholder="judul video" required>
       </div>
     </div>
     <div class="form-group">

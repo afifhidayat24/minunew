@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/dataTables.bootstrap.css">
 
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/minu2.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/minu.css">
     <!-- jQuery 2.1.4 -->
     <script src="<?php echo base_url()?>assets/js/jQuery-2.1.4.min.js"></script>

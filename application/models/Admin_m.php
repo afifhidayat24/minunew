@@ -66,10 +66,21 @@ class admin_m extends CI_Model {
 		$this->db->where('id_artikel', $id);
 		$this->db->delete('artikel');
 	}
+	public function delete_galeri ($id){
+		$this->db->where('id_galeri', $id);
+		$this->db->delete('galeri');
+	}
 	public function edit_kategori ($id){
 		$this->db->select('*');
 		$this->db->from('kategori');
 		$this->db->where('id_kategori', $id);
+		$query = $this->db->get();
+		return $query;
+	}
+	public function edit_galeri ($id){
+		$this->db->select('*');
+		$this->db->from('galeri');
+		$this->db->where('id_galeri', $id);
 		$query = $this->db->get();
 		return $query;
 	}

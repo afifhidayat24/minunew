@@ -115,3 +115,22 @@ body	{ background-color: #eee; }
 	border-radius: 4px;
 	font-weight: bold;
 }
+.imgbox{
+	width: 198px;
+	height: 193px;
+	overflow: hidden;
+	border: 1px solid;
+}
+.whitebox{
+	background-color: white;
+	padding: 14px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.col-menu-adm{
+	background-color: #b3ffcc;
+}
+.listpbox{
+	width: 40px;
+	border-radius: 20px;
+}
