@@ -97,7 +97,7 @@ class Cgaleri extends A_Controller {
 	        echo "Jenis gambar yang anda kirim salah. Harus .jpg .gif .png";
 	      }
 	    } else {
-	      $data['img_galeri'] = ('default.jpg');
+	      $data['img_galeri'] = ('gambarsaatini');
 	    }
 	    $a = basename($_FILES['img_galeri']['name']);
 	    //file yang akan di resize
@@ -106,7 +106,7 @@ class Cgaleri extends A_Controller {
 	    $resizedFile = "assets/img/galeri/$a";
 	    $this->resize->smart_resize_image(null , file_get_contents($file), 400 , 250 , false , $resizedFile , true , false ,35 );
 
-		    $this->Admin_m->insert_galeri ($data);
+		    $this->Admin_m->update_galeri ($id, $data);
 		    $this->session->set_flashdata('message', 'Galeri Baru Barhasil diperbarui');
 
 		    redirect(base_url('admin/Cgaleri/'));

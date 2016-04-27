@@ -10,11 +10,11 @@
 		<form action="<?php echo base_url('admin/cpage/proses_add_page') ?>" method="post">
 			<div class="form-group">
 				<label>Judul Page</label>
-				<input type="text" name="judul_page" class="form-control" placeholder="judul page">
+				<input type="text" name="judul_page" class="form-control" placeholder="judul page" required>
 			</div>
 			<div class="form-group">
 				<label>Isi Page</label>
-				<textarea class="form-control" name="isi_page" rows="4" placeholder="isi page" ></textarea>
+				<textarea class="form-control" name="isi_page" rows="4" placeholder="isi page"></textarea>
 			</div>
 			<div class="form-group">
 				<label>kode Page</label>

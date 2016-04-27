@@ -26,8 +26,8 @@
           <td><?php echo $data->sid ?></td>
           <td><?php echo $data->gender ?></td>
           <td><?php echo $data->status ?></td>
-          <td style="text-align:center"><a href="<?php echo base_url('admin/Cuser/detail_user') ?>/<?php echo $data->id_user ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-square-o"></i>
-  Detail</a>&nbsp;&nbsp;&nbsp;<a href="<?php echo base_url('admin/Cuser/proses_delete_user') ?>/<?php echo $data->id_user ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>&nbsp;Delete</td>
+          <td style="text-align:center"><a onclick="javascript:return confirm('anda yakin ingin mengubah data User');" href="<?php echo base_url('admin/Cuser/detail_user') ?>/<?php echo $data->id_user ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-square-o"></i>
+  Detail</a>&nbsp;&nbsp;&nbsp;<a onclick="javascript:return confirm('anda yakin ingin menghapus');" href="<?php echo base_url('admin/Cuser/proses_delete_user') ?>/<?php echo $data->id_user ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>&nbsp;Delete</td>
         </tr>
       <?php $no++?>
       <?php endforeach ?>
@@ -44,7 +44,7 @@
         <div class="modal-body">
           <form action="<?php echo base_url('admin/Cuser/proses_add_user') ?>" method="post">
              <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                <label for="inputEmail3" class="col-sm-2 control-label">Nama</label>
                   <div class="col-sm-6">
                     <select name="id_user" class="form-control">
                         <?php foreach ($userinval as $data): ?>
@@ -66,8 +66,8 @@
                   <div class="col-sm-3">
                     <select class="form-control" name="gender">
                       <option> </option>
-                      <option value"male">L</option>
-                      <option value"female">P</option>
+                      <option value"male">Laki Laki</option>
+                      <option value"female">Perempuan</option>
                     </select>
                   </div>
                   <div class="sambungfloat"></div>
@@ -78,8 +78,7 @@
                     <select class="form-control" id="status" name="status" placeholder="Status">
                       <option> </option>
                       <option value="guru">Guru</option>
-                      <option value="admin">Admin</option>
-                      <option value="murid">Superadmin</option>
+                      <option value="Karyawan">Karyawan</option>
                     </select>
                   </div>
                   <div class="sambungfloat"></div>

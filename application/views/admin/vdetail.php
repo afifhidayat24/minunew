@@ -18,7 +18,7 @@
 		  <hr/>
 		<form action="<?php echo base_url('admin/Cuser/proses_edit_user') ?>" method="post">
       <input type="hidden" name="id_user" value="<?php echo $htuser->id_user ?>">
-			
+
             <div class="form-group">
               <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
                 <div class="col-sm-10">
@@ -39,7 +39,7 @@
                   <input type="text" name="tgl_lahir" class="form-control" value="<?php echo $htuser->tgl_lahir ?>">
                 </div>
                 <div class="sambungfloat"></div>
-            </div>      	
+            </div>
             <div class="form-group bts-ats">
               <label for="inputEmail3" class="col-sm-2 control-label">No Telp</label>
                 <div class="col-sm-10">
@@ -53,8 +53,8 @@
                   <select class="form-control" name="gender">
                     <option value"<?php echo $htuser->gender ?>"> <?php echo $htuser->gender ?> </option>
                     <option> </option>
-                    <option value"male">L</option>
-                    <option value"male">P</option>
+                    <option value"male">Laki Laki</option>
+                    <option value"female">Perempuan</option>
                   </select>
                 </div>
                 <div class="sambungfloat"></div>
@@ -85,14 +85,14 @@
   <form action="<?php echo base_url('admin/Cuser/proses_add_foto_profil') ?>" method="post" enctype="multipart/form-data">
   <input type="hidden" name="id_user" value="<?php echo $htuser->id_user ?>">
   <input type="hidden" name="username" value="<?php echo $htuser->username ?>">
-    <div class="form-group">   
+    <div class="form-group">
       <img id="preview" class="imgbox" src="<?php echo base_url('assets/img/userimage') ?>/<?php echo $htuser->foto_profile ?>" alt="preview gambar">
       <input id="filedata" type="file" name="fotoprofile" accept="image/*" />
       <p class="help-block"><?php echo $htuser->username ?> MI NU 2</p>
       <button id="uploadBtn" type="submit" name="submit" value="submit" class="btn kanan btn-primary">Upload</button>
     </div>
   </form>
-  <div class="sambungfloat"></div> 
+  <div class="sambungfloat"></div>
   </div>
 </div>
 <script>
@@ -127,7 +127,7 @@
                   <input type="password" name="pass" class="form-control" placeholder="Masukkan Password Baru">
                 </div>
                 <div class="sambungfloat"></div>
-            </div>    
+            </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           <button type="submit" name="submit" value="submit" class="btn btn-primary">Ganti</button>

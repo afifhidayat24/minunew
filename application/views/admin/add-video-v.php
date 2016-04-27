@@ -1,6 +1,6 @@
 <form action="<?php echo base_url('admin/cvideo/proses_add_video') ?>" class="container form-horizontal" method="POST" enctype="multipart/form-data">
   <div class="col-md-8 whitebox">
-    <h3>Video Pembelajaran</h3>
+    <h3>Video Publikasi</h3>
     <hr/>
     <div class="form-group">
       <label class="col-sm-2">Video</label>
@@ -8,15 +8,17 @@
         <input  type="file" name="video"/>
       </div>
       <div class="sambungfloat"></div>
+      <div style="margin-top: 12px; margin-left:140px;">&#42; Jenis format Video yang anda uploud Harus .avi|.flv|.wmv|.mp3|.mp4</div>
+      <div class="sambungfloat"></div>
     </div>`
     <div class="form-group">
-      <label class="col-sm-2">Sampul</label>
+      <label class="col-sm-2">Cover</label>
       <div class="col-sm-8">
         <form>
           <img id="preview" class="imgbox" src="<?php echo base_url('assets/img/artikel/default.jpg') ?>" alt="preview gambar">
           <input id="filedata" type="file" name="img_galeri" accept="image/*" />
         </form>
-        <div style="margin-top: 12px;">Jenis gambar yang anda uploud Harus .jpg .gif .png</div>
+        <div style="margin-top: 12px;">&#42; Jenis gambar yang anda uploud Harus .jpg .gif .png</div>
       </div>
       <div class="sambungfloat"></div>
     </div>
@@ -27,7 +29,7 @@
       </div>
     </div>
     <div class="form-group">
-      <label class="col-sm-2">Kategori Video</label>
+      <label class="col-sm-2">Label Video</label>
       <div class="col-sm-10">
         <input type="text" name="id_kategori" class="form-control" placeholder="kategori video">
       </div>

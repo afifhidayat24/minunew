@@ -44,7 +44,7 @@
                             <div class="modal-body">
                                 <form action="<?php echo base_url('admin/Cmanuser/proses_add_user') ?>" method="post">
                                     <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Nama</label>
                                         <div class="col-sm-6">
                                             <input type="text" name="username" class="form-control" placeholder="username baru">
                                         </div>

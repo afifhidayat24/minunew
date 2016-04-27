@@ -2,11 +2,11 @@
   <div class="col-md-8 whitebox">
   <h3 class="container">Tambah Galeri</h3>
   <hr/>
-      <input type="hidden" name="id_user" value="">		  	
+      <input type="hidden" name="id_user" value="">
             <div class="form-group bts-ats">
               <label class="col-sm-2 control-label">Judul</label>
                 <div class="col-sm-10">
-                  <input type="text" name="judul_img" class="form-control" placeholder="judul">
+                  <input type="text" name="judul_img" class="form-control" placeholder="judul" required>
                 </div>
                 <div class="sambungfloat"></div>
             </div>
@@ -29,7 +29,7 @@
                   <div class="col-sm-8">
                     <form>
                       <img id="preview" class="imgbox" src="<?php echo base_url('assets/img/artikel/default.jpg') ?>" alt="preview gambar">
-                      <input id="filedata" type="file" name="img_galeri" accept="image/*" />
+                      <input id="filedata" type="file" name="img_galeri" accept="image/*" /required>
                     </form>
                   </div>
                 <div class="sambungfloat"></div>
@@ -52,4 +52,3 @@
     readURL(this);
   });
 </script>
-  

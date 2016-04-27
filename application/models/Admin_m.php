@@ -150,4 +150,8 @@ class admin_m extends CI_Model {
 		$this->db->where('id_artikel', $id);
 		$this->db->update('artikel', $data);
 	}
+	public function update_galeri ($id, $data){
+		$this->db->where('id_galeri', $id);
+		$this->db->update('galeri', $data);
+	}
 }

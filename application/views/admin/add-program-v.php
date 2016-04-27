@@ -11,7 +11,7 @@ tinymce.init({
         <input type="hidden" name="id_user" value="">
         <div class="form-group bts-ats">
             <div class="col-sm-12">
-                <input type="text" name="nm_program" class="form-control" placeholder="Nama Program">
+                <input type="text" name="nm_program" class="form-control" placeholder="Nama Program" required>
             </div>
             <div class="sambungfloat"></div>
         </div>
@@ -25,7 +25,7 @@ tinymce.init({
             <div class="form-group bts-ats">
                 <label class="col-sm-3 control-label">Kategori</label>
                 <div class="col-sm-8">
-                    <select name="kat_program" class="form-control">
+                    <select name="kat_program" class="form-control" required>
                         <option> </option>
                         <option value="Unggulan">Unggulan</option>
                         <option value="Ekstrakulikuler">Ekstrakulikuler</option>

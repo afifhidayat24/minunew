@@ -20,7 +20,7 @@
         <div class="form-group bts-ats">
             <label class="col-sm-2 control-label">Keterangan</label>
             <div class="col-sm-10">
-                <input type="text" name="ket_galeri" class="form-control" value="<?php echo $editgaleri->judul_img ?>">
+                <input type="text" name="ket_galeri" class="form-control" value="<?php echo $editgaleri->ket_galeri ?>">
             </div>
             <div class="sambungfloat"></div>
         </div>
