@@ -62,7 +62,7 @@ class Cvideo extends A_Controller {
             $this->load->library('upload', $configVideo);
             $this->upload->initialize($configVideo);
             if(!$this->upload->do_upload('video')) {
-                echo $this->upload->display_errors();
+                echo $this->upload->display_errors('!!! Video Gagal ditambahkan Periksa Kembali Format video yang anda tambahkan !!!');
             }else{
                 $videoDetails = $this->upload->data();
 

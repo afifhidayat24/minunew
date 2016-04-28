@@ -1,3 +1,10 @@
+<?php if ($this->session->flashdata('message')): ?>
+    <div class="alert alert-info alert-dismissible bts-ats bts-bwh" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <i class="fa fa-check-circle"></i> <strong><?php echo $this->session->flashdata('message');?></strong>
+    </div>
+<?php endif ?>
+
 <form action="<?php echo base_url('admin/cvideo/proses_add_video') ?>" class="container form-horizontal" method="POST" enctype="multipart/form-data">
   <div class="col-md-8 whitebox">
     <h3>Video Publikasi</h3>

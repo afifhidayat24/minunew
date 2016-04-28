@@ -47,8 +47,8 @@
 					<tr>
 						<td><?php echo $data->judul_page ?></td>
 						<td><?php echo $data->isi_page ?></td>
-						<td><a href="" class="btn btn-sm btn-info"><i class="fa fa-pencil-square-o"></i>edit</a></td>
-						<td><a href="<?php echo base_url('admin/cpage/proses_delete_page') ?>/<?php echo $data->id_page ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>
+						<td><a onclick="javascript:return confirm('anda yakin ingin merubah data page');" href="" class="btn btn-sm btn-info"><i class="fa fa-pencil-square-o"></i>edit</a></td>
+						<td><a onclick="javascript:return confirm('anda yakin ingin menghapus');" href="<?php echo base_url('admin/cpage/proses_delete_page') ?>/<?php echo $data->id_page ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>
 							delete</a></td>
 						</tr>
 					<?php endforeach ?>
