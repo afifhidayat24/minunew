@@ -8,9 +8,16 @@ class Home_m extends CI_Model {
 		$sdf=$this->db->get('artikel');
 		return $sdf->result();
 	}
+	public function getgaleri (){
+		$this->db->order_by('id_galeri', 'desc');
+		$this->db->limit(3);
 
+		$sdf=$this->db->get('galeri');
+		return $sdf->result();
+	}
 	public function getartikel1 (){
 		$this->db->select('*');
+		$this->db->order_by('id_artikel', 'desc');
 		$sdf=$this->db->get('artikel');
 		return $sdf->row();
 	}

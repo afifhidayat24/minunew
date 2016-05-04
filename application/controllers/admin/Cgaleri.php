@@ -97,7 +97,7 @@ class Cgaleri extends A_Controller {
 	        echo "Jenis gambar yang anda kirim salah. Harus .jpg .gif .png";
 	      }
 	    } else {
-	      $data['img_galeri'] = ('gambarsaatini');
+	      $data['img_galeri'] = $this->input->post('gambarsaatini');
 	    }
 	    $a = basename($_FILES['img_galeri']['name']);
 	    //file yang akan di resize

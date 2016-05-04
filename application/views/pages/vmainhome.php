@@ -122,14 +122,16 @@
                         <div class="lblttlbox"><h4 class="lblttl"><i class="fa fa-cab"></i> Agenda Madrasah</h4></div>
                         <!--list start-->
                         <?php foreach ($artbycatagenda as $abcagenda): ?>
-                            <div class="isilbl2">
-                                <h4 class="lblttl2"><?php echo $abcagenda->judul_artikel ?></h4>
-                                <div class="mediabox">
-                                    <div class="lbldll">oleh admin</div>
-                                    <div class="lbldll"><?php echo $abcagenda->tgl_artikel ?></div>
-                                    <div class="sambungfloat"></div>
+                            <a href="<?php echo base_url()?>ctampilartikel/artikel/<?php echo $abcagenda->id_artikel?>">
+                                <div class="isilbl2">
+                                    <h4 class="lblttl2"><?php echo $abcagenda->judul_artikel ?></h4>
+                                    <div class="mediabox">
+                                        <div class="lbldll">oleh admin</div>
+                                        <div class="lbldll"><?php echo $abcagenda->tgl_artikel ?></div>
+                                        <div class="sambungfloat"></div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         <?php endforeach; ?>
                         <div class="aalshow">Show All</div>
                     </div>
@@ -139,14 +141,16 @@
                         <div class="lblttlbox"><h4 class="lblttl"><i class="fa fa-bullhorn"></i> Info Jariyah</h4></div>
                         <!--list start-->
                         <?php foreach ($artbycatjar as $abcjar): ?>
-                            <div class="isilbl2">
-                                <h4 class="lblttl2"><?php echo $abcjar->judul_artikel ?> </h4>
-                                <div class="mediabox">
-                                    <div class="lbldll">oleh admin</div>
-                                    <div class="lbldll"><?php echo $abcjar->tgl_artikel ?></div>
-                                    <div class="sambungfloat"></div>
+                            <a href="<?php echo base_url()?>ctampilartikel/artikel/<?php echo $abcjar->id_artikel?>">
+                                <div class="isilbl2">
+                                    <h4 class="lblttl2"><?php echo $abcjar->judul_artikel ?></h4>
+                                    <div class="mediabox">
+                                        <div class="lbldll">oleh admin</div>
+                                        <div class="lbldll"><?php echo $abcjar->tgl_artikel ?></div>
+                                        <div class="sambungfloat"></div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         <?php endforeach; ?>
                         <div class="aalshow">Show All</div>
                     </div>
@@ -160,7 +164,7 @@
                     <h5 class="pathboxttl"><i class="fa fa-folder"></i> Video Pembelajaran</h5>
                     <div class="pathboxdes">
                         <p>Beberapa Video Pembelajaran untuk Siswa</p>
-                        <a href="#"><b>Selengkapnya..</b></a>
+                        <a href="<?php echo base_url()?>cpembelajaran/"><b>Selengkapnya..</b></a>
                     </div>
                 </div>
             </div>
@@ -169,7 +173,7 @@
                     <h5 class="pathboxttl"><i class="fa fa-folder"></i> Publikasi Kegiatan</h5>
                     <div class="pathboxdes">
                         <p>Dokumentasi Kegiatan Yang Ada di MI NU 2 Keradenan</p>
-                        <a href="#"><b>Selengkapnya..</b></a>
+                        <a href="<?php echo base_url()?>ckegiatan/"><b>Selengkapnya..</b></a>
                     </div>
                 </div>
             </div>
@@ -178,7 +182,7 @@
                     <h5 class="pathboxttl"><i class="fa fa-folder"></i> Publikasi Lomba</h5>
                     <div class="pathboxdes">
                         <p>Dokumentasi Ke ikut Sertaan pada Setiap Lomba</p>
-                        <a href="#"><b>Selengkapnya..</b></a>
+                        <a href="<?php echo base_url()?>clomba/"><b>Selengkapnya..</b></a>
                     </div>
                 </div>
             </div>
@@ -187,7 +191,7 @@
                     <h5 class="pathboxttl"><i class="fa fa-folder"></i> Profil Madrasah</h5>
                     <div class="pathboxdes">
                         <p>Video Profil Keseharian Siswa MI NU 2 Kradenan</p>
-                        <a href="#"><b>Selengkapnya..</b></a>
+                        <a href="<?php echo base_url()?>cprofil/"><b>Selengkapnya..</b></a>
                     </div>
                 </div>
             </div>
@@ -198,17 +202,17 @@
             <div class="lblttlbox"><h4 class="lblttl tengah"><i class="fa fa-desktop"></i> PRESTASI KAMI</h4></div>
             <!--list start-->
             <?php foreach ($artbycatpres as $abcpres): ?>
-                <div class="isilbl">
-                    <h4 class="lblttl2"><?php echo $abcpres->judul_artikel ?></h4>
-                    <div class="mediabox">
-                        <div class="lbldll">oleh admin</div>
-                        <div class="lbldll"><?php echo $abcpres->tgl_artikel ?></div>
-                        <div class="sambungfloat"></div>
+                <a href="<?php echo base_url()?>ctampilartikel/artikel/<?php echo $abcpres->id_artikel?>">
+                    <div class="isilbl">
+                        <h4 class="lblttl2"><?php echo $abcpres->judul_artikel ?></h4>
+                        <div class="mediabox">
+                            <div class="lbldll">oleh admin</div>
+                            <div class="lbldll"><?php echo $abcpres->tgl_artikel ?></div>
+                            <div class="sambungfloat"></div>
+                        </div>
                     </div>
-                </div>
+                </a>
             <?php endforeach; ?>
-
-
             <div class="aalshow">Show All</div>
         </div>
 
@@ -217,14 +221,16 @@
 
             <!--list start-->
             <?php foreach ($artbycat3 as $abc3): ?>
-                <div class="isilbl">
-                    <h4 class="lblttl2"><?php echo $abc3->judul_artikel ?></h4>
-                    <div class="mediabox">
-                        <div class="lbldll">oleh admin</div>
-                        <div class="lbldll"><?php echo $abc3->tgl_artikel ?></div>
-                        <div class="sambungfloat"></div>
+                <a href="<?php echo base_url()?>ctampilartikel/artikel/<?php echo $abc3->id_artikel?>">
+                    <div class="isilbl">
+                        <h4 class="lblttl2"><?php echo $abc3->judul_artikel ?></h4>
+                        <div class="mediabox">
+                            <div class="lbldll">oleh admin</div>
+                            <div class="lbldll"><?php echo $abc3->tgl_artikel ?></div>
+                            <div class="sambungfloat"></div>
+                        </div>
                     </div>
-                </div>
+                </a>
             <?php endforeach; ?>
 
             <div class="aalshow">Show All</div>
