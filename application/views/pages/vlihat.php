@@ -10,9 +10,9 @@
       						<div class="media">
 
       							<div class="media-body">
-      								<h4 class="media-heading"><b>judul</b></h4></br>
+      								<h4 class="media-heading"><b><?php echo $pageini->judul_page; ?></b></h4></br>
       								<div class="bts-ats">
-      								isinya
+      								<?php echo $pageini->isi_page; ?>
       								</div>
       							</div>
       						</div>

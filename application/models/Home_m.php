@@ -1,6 +1,23 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Home_m extends CI_Model {
 
+	//video
+	public function getVideoPemabelajaran(){
+		$this->db->order_by('kategori_video','desc');
+		$this->db->where('pembelajaran');
+		$this->db->limit(5);
+
+		$vidP=$this->db->get('video');
+		return $vidP->result();
+	}
+
+	public function lastVidP(){
+		$this->db->select_max('kategori_video');
+		$this->db->where('pembelajaran');
+
+		$this->db->get('video');
+	}
+
 	public function getartikel (){
 		$this->db->order_by('id_artikel', 'desc');
 		$this->db->limit(5);
@@ -80,4 +97,17 @@ class Home_m extends CI_Model {
 	public function insert_kontak ($data){
 		$this->db->insert('kontak', $data);
 	}
+	public function getsemuapage(){
+		$this->db->order_by('id_page', 'desc');
+		$sdf=$this->db->get('page');
+		return $sdf->result();
+	}
+
+	public function lihat($id){
+		$this->db->where('id_page', $id);
+		$sdf=$this->db->get('page');
+		return $sdf;
+	}
+
+
 }

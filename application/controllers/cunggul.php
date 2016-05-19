@@ -5,6 +5,7 @@ class cunggul extends CI_Controller{
 
   public function __construct() {
     parent::__construct();
+    $this->load->model('Home_m');
   }
 
   public function index()
@@ -12,7 +13,7 @@ class cunggul extends CI_Controller{
     $data['title'] = 'MADRASAH IBTIDAIYAH NAHDLATUL ULAMA 2';
     $data['taglineuni'] = 'LEMBAGA PENDIDIKAN MA’ARIF CAB. BANYUWANGI';
     $data['alamat'] = 'Jl. Sumber Urip Kaliboyo Kradenan Purwoharjo Banyuwangi Jawa Timur';
-    
+
     $data['halaman'] = 'pages/vunggul';
     $this->load->view('pages/vhome', $data);
 

@@ -30,6 +30,17 @@ class cpage extends A_Controller {
 		$data['getkategori']= $this->admin_m->getkategori();
 		$this->load->view('admin/vdashboard', $data);
 	}
+	public function select_pageisi()
+	{
+		$data['page']='admin/adm-isipage-v';
+		$data['nav']='admin/nav-admin';
+		$data['title'] = 'page';
+		$data['gtuser'] = $this->admin_m->detail_user($this->session->userdata('c_id'));
+		$data['dtuser'] = $this->session->userdata('c_username');
+		$data['getpage']= $this->admin_m->getpage();
+		$data['getkategori']= $this->admin_m->getkategori();
+		$this->load->view('admin/vdashboard', $data);
+	}
 	public function proses_add_kategori (){
 		$post = $this->input->post();
 
@@ -58,7 +69,7 @@ class cpage extends A_Controller {
 		$data = array(
 			'judul_page'=> $post['judul_page'],
 			'isi_page'  => $post['isi_page'],
-			'id_kategori'  => $post['id_kategori'],
+			'icon_page'  => $post['icon_page'],
 		);
 
 		$this->admin_m->insert_page ($data);

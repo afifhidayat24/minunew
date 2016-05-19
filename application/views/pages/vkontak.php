@@ -3,6 +3,12 @@
     <div class="">
       <h4><b>Kontak Kami</b></h4>
     </div>
+    <?php if ($this->session->flashdata('message')): ?>
+        <div class="alert alert-info alert-dismissible bts-ats bts-bwh" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <i class="fa fa-check-circle"></i> <strong><?php echo $this->session->flashdata('message');?></strong>
+        </div>
+    <?php endif ?>
     <form action="<?php echo base_url('ckontak/insert_kontak') ?>" method="post" enctype="multipart/form-data">
       <p>
         Apabila terdapat pertanyaan Seputar Madrasah Ibtidaiyah Nahdlatul Ulama 2 Kradenan, silahkan kirimkan pertanyaan Anda melalui pengisian form di bawah ini.
@@ -27,6 +33,16 @@
         <label for="exampleInputPassword1">Pertanyaan</label>
         <textarea class="form-control" name="pertanyaan_k"  rows="8" cols="40"></textarea>
       </div>
+      <div class="form-group">
+        <label for="nilaiCaptcha">Captcha</label>
+        <img src="assets/gambar.php" alt="Capt" />
+      </div>
+      <div class="form-group">
+        <input name="nilaiCaptcha" class="form-control" maxlength="6" value="" placeholder="Masukan Captcha">
+      </div>
+
+
+
       <button type="submit" class="btn btn-success">Kirim</button>
     </form>
   </div>

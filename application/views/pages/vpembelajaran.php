@@ -15,7 +15,7 @@
                 <video style="width:100%; margin:auto; margin-bottom:18px; border-radius:3px;" id="my-video" class="video-js" controls preload="auto" width="800" height="484"
                 poster="<?php echo base_url()?>/assets/img/" data-setup="{}">
                 <source src="<?php echo base_url()?>/assets/video" type='video/mp4'>
-                    <source src="<?php echo base_url()?>/assets/video/test.webm" type='video/webm'>
+                    <source src="<?php echo $lastVid ?>" type='video/webm'>
                         <p class="vjs-no-js">
                             To view this video please enable JavaScript, and consider upgrading to a web browser that
                             <a href="<?php echo base_url('assets/logo/minu.png') ?>" target="_blank">supports HTML5 video</a>
@@ -28,6 +28,6 @@
 
                 </div>
                 <div class="sambungfloat"></div>
-            </div>
-
         </div>
+
+    </div>

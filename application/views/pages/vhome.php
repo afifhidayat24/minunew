@@ -24,12 +24,12 @@
 				<div class="sambungfloat"></div>
 			</div>
 			<div class="col-md-8 paddingnone">
-				<div class="unimenav kanan"><a href="<?php echo base_url()?>chome/"><i class="fa fa-phone-square"></i> Layanan</a></div>
-				<div class="unimenav kanan"><a href="<?php echo base_url()?>cfaq/"><i class="fa fa-suitcase"></i> FAQ </a></div>
-				<div class="unimenav kanan"><a href="<?php echo base_url()?>chome/"><i class="fa fa-mortar-board"></i> Akademik</a></div>
-				<div class="unimenav kanan"><a href="<?php echo base_url()?>cfasilitas/"><i class="fa fa-bell"></i> Fasilitas</a></div>
-				<div class="unimenav kanan"><a href="<?php echo base_url()?>cmoto/"><i class="fa fa-sitemap"></i> Organisasi</a></div>
-				<div class="unimenav kanan"><a href="<?php echo base_url()?>csejarah/"><i class="fa fa-university"></i> Tentang Kami</a></div>
+				<?php $this->load->model('Home_m');
+				$get_page = $this->Home_m->getsemuapage();
+				?>
+				<?php foreach ($get_page as $key): ?>
+					<div class="unimenav kanan"><a href="<?php echo base_url('chome/lihat/'.$key->id_page)?>"><i class="<?php echo $key->icon_page; ?>"></i> <?php echo $key->judul_page; ?></a></div>
+				<?php endforeach; ?>
 			</div>
 			<div class="sambungfloat"></div>
 		</div>

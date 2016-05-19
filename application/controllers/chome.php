@@ -29,4 +29,19 @@ class chome extends CI_Controller{
 
   }
 
+  function lihat($id){
+      $this->load->model('Home_m');
+      $num_row = $this->Home_m->lihat($id)->num_rows();
+      if ($num_row != 1) {
+          show_404();
+      }else{
+          $data['title'] = 'MADRASAH IBTIDAIYAH NAHDLATUL ULAMA 2';
+          $data['taglineuni'] = 'LEMBAGA PENDIDIKAN MA’ARIF CAB. BANYUWANGI';
+          $data['alamat'] = 'Jl. Sumber Urip Kaliboyo Kradenan Purwoharjo Banyuwangi Jawa Timur';
+
+          $data['pageini'] = $this->Home_m->lihat($id)->row(); 
+          $data['halaman'] = 'pages/vlihat';
+          $this->load->view('pages/vhome', $data);
+      }
+  }
 }
