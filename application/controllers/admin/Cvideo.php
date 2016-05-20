@@ -36,45 +36,86 @@ class Cvideo extends A_Controller {
         $data['gtuser'] = $this->User_m->detail_user($this->session->userdata('c_id'));
         $this->load->view('admin/vdashboard', $data);
     }
+
     public function proses_add_video(){
-        $post = $this->input->post();
+        if(!empty($_FILES['video']['name']))
+                {
+                    $this->load->library('upload');
+                    $config['allowed_types'] = 'avi|flv|wmv|mp3|mp4';
+                    $config['upload_path'] = './assets/video';
+                    $extension = end(explode('.', $_FILES['video']['name']));
+                    $config['file_name']  = strtolower(url_title($_FILES['video']['name'],null,TRUE)).date('his').'.'.$extension;
+                    $this->upload->initialize($config);
+                    if($this->upload->do_upload('video'))
+                    {
+                        $data_media = array('upload_data' => $this->upload->data());
+                        //memasukkan data ke dalam database...
+                        $data = array(
+                            'judul_video'   => $this->input->post('judul_video'),
+                            'filemedia'     => $data_media['upload_data']['file_name'],
+                            'tgl_upload'    => $this->input->post('tgl_upload'),
+                            'sinopsis'      => $this->input->post('sinopsis'),
+                            'id_kategori'   => $this->input->post('id_kategori'),
+                            'id_user'       => $this->session->userdata('c_id')
+                            
 
-        $data = array(
-            'judul_video'  => $post['judul_video'],
-            'sinopsis' => $post['sinopsis'],
-            'tgl_upload'   => $post['tgl_upload'],
-            'id_kategori'   => $post['id_kategori'],
-            'id_user'   => $this->session->userdata('c_id'),
+                            //'type'          => $data_media['upload_data']['file_type'],
+                            //'cre'           => date('Y-m-d H:i:s'),
+                            //'user_id'       => $this->session->userdata['becky_session']['id']
+                        );
+                        $this->Admin_m->insert_video ($data);
+                        $this->session->set_flashdata('message', 'Data media berhasil disimpan!');
+                        redirect('admin/Cvideo/add_video');
+                    }else{
+                        echo $this->upload->display_errors('!!! Video Gagal ditambahkan Periksa Kembali Format video yang anda tambahkan !!!');
+                    }
 
-        );
+                }else{
+                    echo "Please select a file";
+                }
+        // $post = $this->input->post();
 
-        if (isset($_FILES['video']['name']) && $_FILES['video']['name'] != '') {
-            unset($config);
-            $date = date("Ymd");
-            $configVideo['upload_path'] = './assets/video';
-            $configVideo['max_size'] = '100000000';
-            $configVideo['allowed_types'] = 'avi|flv|wmv|mp3|mp4';
-            $configVideo['overwrite'] = FALSE;
-            $configVideo['remove_spaces'] = TRUE;
-            $video_name = $date.$_FILES['video']['name'];
-            $configVideo['file_name'] = $video_name;
+        // $data = array(
+        //     'judul_video'  => $post['judul_video'],
+        //     'sinopsis' => $post['sinopsis'],
+        //     'tgl_upload'   => $post['tgl_upload'],
+        //     'id_kategori'   => $post['id_kategori'],
+        //     'id_user'   => $this->session->userdata('c_id'),
 
-            $this->load->library('upload', $configVideo);
-            $this->upload->initialize($configVideo);
-            if(!$this->upload->do_upload('video')) {
-                echo $this->upload->display_errors('!!! Video Gagal ditambahkan Periksa Kembali Format video yang anda tambahkan !!!');
-            }else{
-                $videoDetails = $this->upload->data();
+        // );
 
-                $this->Admin_m->insert_video ($data);
-                $this->session->set_flashdata('message', 'Video Barhasil ditambahkan');
+        // $this->Admin_m->insert_video ($data);
+        // $this->session->set_flashdata('message', 'Video Barhasil ditambahkan');
 
-                redirect('admin/Cvideo/add_video');
-            }
+        // redirect('admin/Cvideo/add_video');
 
-        }else{
-            echo "Please select a file";
-        }
+        // if (isset($_FILES['video']['name']) && $_FILES['video']['name'] != '') {
+        //     unset($config);
+        //     $date = date("Ymd");
+        //     $configVideo['upload_path'] = './assets/video';
+        //     $configVideo['max_size'] = '100000000';
+        //     $configVideo['allowed_types'] = 'avi|flv|wmv|mp3|mp4';
+        //     $configVideo['overwrite'] = FALSE;
+        //     $configVideo['remove_spaces'] = TRUE;
+        //     $video_name = $date.$_FILES['video']['name'];
+        //     $configVideo['file_name'] = $video_name;
+
+        //     $this->load->library('upload', $configVideo);
+        //     $this->upload->initialize($configVideo);
+        //     if(!$this->upload->do_upload('video')) {
+        //         echo $this->upload->display_errors('!!! Video Gagal ditambahkan Periksa Kembali Format video yang anda tambahkan !!!');
+        //     }else{
+        //         $videoDetails = $this->upload->data();
+
+        //         $this->Admin_m->insert_video ($data);
+        //         $this->session->set_flashdata('message', 'Video Barhasil ditambahkan');
+
+        //         redirect('admin/Cvideo/add_video');
+        //     }
+
+        // }else{
+        //     echo "Please select a file";
+        // }
     }
 
     function get_guru_mapel(){
